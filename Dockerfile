@@ -1,4 +1,4 @@
-FROM flynn/cedarish
+FROM ckeyer/dev
 
 ADD ./builder/ /tmp/builder
 # Explicitly number the buildpacks directory based on the order of buildpacks.txt
