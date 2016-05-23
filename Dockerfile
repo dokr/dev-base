@@ -2,6 +2,6 @@ FROM alpine:edge
 
 MAINTAINER ckeyer <docker@ckeyer.com>
 
-RUN apk add --update git make subversion curl wget tar zip bash bash-completion && \
+RUN apk add --update git make subversion curl wget tar zip bash bash-completion flex bison gcc && \
 	rm -rf /var/cache/apk/*
 
