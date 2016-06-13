@@ -2,1355 +2,1355 @@ FROM alpine:edge
 
 MAINTAINER ckeyer <docker@ckeyer.com>
 
-RUN touch /opt/aa
+RUN mkdir -p /opt/aa
 ENV AA=aa
-RUN touch /opt/ab
+RUN mkdir -p /opt/ab
 ENV AB=ab
-RUN touch /opt/ac
+RUN mkdir -p /opt/ac
 ENV AC=ac
-RUN touch /opt/ad
+RUN mkdir -p /opt/ad
 ENV AD=ad
-RUN touch /opt/ae
+RUN mkdir -p /opt/ae
 ENV AE=ae
-RUN touch /opt/af
+RUN mkdir -p /opt/af
 ENV AF=af
-RUN touch /opt/ag
+RUN mkdir -p /opt/ag
 ENV AG=ag
-RUN touch /opt/ah
+RUN mkdir -p /opt/ah
 ENV AH=ah
-RUN touch /opt/ai
+RUN mkdir -p /opt/ai
 ENV AI=ai
-RUN touch /opt/aj
+RUN mkdir -p /opt/aj
 ENV AJ=aj
-RUN touch /opt/ak
+RUN mkdir -p /opt/ak
 ENV AK=ak
-RUN touch /opt/al
+RUN mkdir -p /opt/al
 ENV AL=al
-RUN touch /opt/am
+RUN mkdir -p /opt/am
 ENV AM=am
-RUN touch /opt/an
+RUN mkdir -p /opt/an
 ENV AN=an
-RUN touch /opt/ao
+RUN mkdir -p /opt/ao
 ENV AO=ao
-RUN touch /opt/ap
+RUN mkdir -p /opt/ap
 ENV AP=ap
-RUN touch /opt/aq
+RUN mkdir -p /opt/aq
 ENV AQ=aq
-RUN touch /opt/ar
+RUN mkdir -p /opt/ar
 ENV AR=ar
-RUN touch /opt/as
+RUN mkdir -p /opt/as
 ENV AS=as
-RUN touch /opt/at
+RUN mkdir -p /opt/at
 ENV AT=at
-RUN touch /opt/au
+RUN mkdir -p /opt/au
 ENV AU=au
-RUN touch /opt/av
+RUN mkdir -p /opt/av
 ENV AV=av
-RUN touch /opt/aw
+RUN mkdir -p /opt/aw
 ENV AW=aw
-RUN touch /opt/ax
+RUN mkdir -p /opt/ax
 ENV AX=ax
-RUN touch /opt/ay
+RUN mkdir -p /opt/ay
 ENV AY=ay
-RUN touch /opt/az
+RUN mkdir -p /opt/az
 ENV AZ=az
-RUN touch /opt/ba
+RUN mkdir -p /opt/ba
 ENV BA=ba
-RUN touch /opt/bb
+RUN mkdir -p /opt/bb
 ENV BB=bb
-RUN touch /opt/bc
+RUN mkdir -p /opt/bc
 ENV BC=bc
-RUN touch /opt/bd
+RUN mkdir -p /opt/bd
 ENV BD=bd
-RUN touch /opt/be
+RUN mkdir -p /opt/be
 ENV BE=be
-RUN touch /opt/bf
+RUN mkdir -p /opt/bf
 ENV BF=bf
-RUN touch /opt/bg
+RUN mkdir -p /opt/bg
 ENV BG=bg
-RUN touch /opt/bh
+RUN mkdir -p /opt/bh
 ENV BH=bh
-RUN touch /opt/bi
+RUN mkdir -p /opt/bi
 ENV BI=bi
-RUN touch /opt/bj
+RUN mkdir -p /opt/bj
 ENV BJ=bj
-RUN touch /opt/bk
+RUN mkdir -p /opt/bk
 ENV BK=bk
-RUN touch /opt/bl
+RUN mkdir -p /opt/bl
 ENV BL=bl
-RUN touch /opt/bm
+RUN mkdir -p /opt/bm
 ENV BM=bm
-RUN touch /opt/bn
+RUN mkdir -p /opt/bn
 ENV BN=bn
-RUN touch /opt/bo
+RUN mkdir -p /opt/bo
 ENV BO=bo
-RUN touch /opt/bp
+RUN mkdir -p /opt/bp
 ENV BP=bp
-RUN touch /opt/bq
+RUN mkdir -p /opt/bq
 ENV BQ=bq
-RUN touch /opt/br
+RUN mkdir -p /opt/br
 ENV BR=br
-RUN touch /opt/bs
+RUN mkdir -p /opt/bs
 ENV BS=bs
-RUN touch /opt/bt
+RUN mkdir -p /opt/bt
 ENV BT=bt
-RUN touch /opt/bu
+RUN mkdir -p /opt/bu
 ENV BU=bu
-RUN touch /opt/bv
+RUN mkdir -p /opt/bv
 ENV BV=bv
-RUN touch /opt/bw
+RUN mkdir -p /opt/bw
 ENV BW=bw
-RUN touch /opt/bx
+RUN mkdir -p /opt/bx
 ENV BX=bx
-RUN touch /opt/by
+RUN mkdir -p /opt/by
 ENV BY=by
-RUN touch /opt/bz
+RUN mkdir -p /opt/bz
 ENV BZ=bz
-RUN touch /opt/ca
+RUN mkdir -p /opt/ca
 ENV CA=ca
-RUN touch /opt/cb
+RUN mkdir -p /opt/cb
 ENV CB=cb
-RUN touch /opt/cc
+RUN mkdir -p /opt/cc
 ENV CC=cc
-RUN touch /opt/cd
+RUN mkdir -p /opt/cd
 ENV CD=cd
-RUN touch /opt/ce
+RUN mkdir -p /opt/ce
 ENV CE=ce
-RUN touch /opt/cf
+RUN mkdir -p /opt/cf
 ENV CF=cf
-RUN touch /opt/cg
+RUN mkdir -p /opt/cg
 ENV CG=cg
-RUN touch /opt/ch
+RUN mkdir -p /opt/ch
 ENV CH=ch
-RUN touch /opt/ci
+RUN mkdir -p /opt/ci
 ENV CI=ci
-RUN touch /opt/cj
+RUN mkdir -p /opt/cj
 ENV CJ=cj
-RUN touch /opt/ck
+RUN mkdir -p /opt/ck
 ENV CK=ck
-RUN touch /opt/cl
+RUN mkdir -p /opt/cl
 ENV CL=cl
-RUN touch /opt/cm
+RUN mkdir -p /opt/cm
 ENV CM=cm
-RUN touch /opt/cn
+RUN mkdir -p /opt/cn
 ENV CN=cn
-RUN touch /opt/co
+RUN mkdir -p /opt/co
 ENV CO=co
-RUN touch /opt/cp
+RUN mkdir -p /opt/cp
 ENV CP=cp
-RUN touch /opt/cq
+RUN mkdir -p /opt/cq
 ENV CQ=cq
-RUN touch /opt/cr
+RUN mkdir -p /opt/cr
 ENV CR=cr
-RUN touch /opt/cs
+RUN mkdir -p /opt/cs
 ENV CS=cs
-RUN touch /opt/ct
+RUN mkdir -p /opt/ct
 ENV CT=ct
-RUN touch /opt/cu
+RUN mkdir -p /opt/cu
 ENV CU=cu
-RUN touch /opt/cv
+RUN mkdir -p /opt/cv
 ENV CV=cv
-RUN touch /opt/cw
+RUN mkdir -p /opt/cw
 ENV CW=cw
-RUN touch /opt/cx
+RUN mkdir -p /opt/cx
 ENV CX=cx
-RUN touch /opt/cy
+RUN mkdir -p /opt/cy
 ENV CY=cy
-RUN touch /opt/cz
+RUN mkdir -p /opt/cz
 ENV CZ=cz
-RUN touch /opt/da
+RUN mkdir -p /opt/da
 ENV DA=da
-RUN touch /opt/db
+RUN mkdir -p /opt/db
 ENV DB=db
-RUN touch /opt/dc
+RUN mkdir -p /opt/dc
 ENV DC=dc
-RUN touch /opt/dd
+RUN mkdir -p /opt/dd
 ENV DD=dd
-RUN touch /opt/de
+RUN mkdir -p /opt/de
 ENV DE=de
-RUN touch /opt/df
+RUN mkdir -p /opt/df
 ENV DF=df
-RUN touch /opt/dg
+RUN mkdir -p /opt/dg
 ENV DG=dg
-RUN touch /opt/dh
+RUN mkdir -p /opt/dh
 ENV DH=dh
-RUN touch /opt/di
+RUN mkdir -p /opt/di
 ENV DI=di
-RUN touch /opt/dj
+RUN mkdir -p /opt/dj
 ENV DJ=dj
-RUN touch /opt/dk
+RUN mkdir -p /opt/dk
 ENV DK=dk
-RUN touch /opt/dl
+RUN mkdir -p /opt/dl
 ENV DL=dl
-RUN touch /opt/dm
+RUN mkdir -p /opt/dm
 ENV DM=dm
-RUN touch /opt/dn
+RUN mkdir -p /opt/dn
 ENV DN=dn
-RUN touch /opt/do
+RUN mkdir -p /opt/do
 ENV DO=do
-RUN touch /opt/dp
+RUN mkdir -p /opt/dp
 ENV DP=dp
-RUN touch /opt/dq
+RUN mkdir -p /opt/dq
 ENV DQ=dq
-RUN touch /opt/dr
+RUN mkdir -p /opt/dr
 ENV DR=dr
-RUN touch /opt/ds
+RUN mkdir -p /opt/ds
 ENV DS=ds
-RUN touch /opt/dt
+RUN mkdir -p /opt/dt
 ENV DT=dt
-RUN touch /opt/du
+RUN mkdir -p /opt/du
 ENV DU=du
-RUN touch /opt/dv
+RUN mkdir -p /opt/dv
 ENV DV=dv
-RUN touch /opt/dw
+RUN mkdir -p /opt/dw
 ENV DW=dw
-RUN touch /opt/dx
+RUN mkdir -p /opt/dx
 ENV DX=dx
-RUN touch /opt/dy
+RUN mkdir -p /opt/dy
 ENV DY=dy
-RUN touch /opt/dz
+RUN mkdir -p /opt/dz
 ENV DZ=dz
-RUN touch /opt/ea
+RUN mkdir -p /opt/ea
 ENV EA=ea
-RUN touch /opt/eb
+RUN mkdir -p /opt/eb
 ENV EB=eb
-RUN touch /opt/ec
+RUN mkdir -p /opt/ec
 ENV EC=ec
-RUN touch /opt/ed
+RUN mkdir -p /opt/ed
 ENV ED=ed
-RUN touch /opt/ee
+RUN mkdir -p /opt/ee
 ENV EE=ee
-RUN touch /opt/ef
+RUN mkdir -p /opt/ef
 ENV EF=ef
-RUN touch /opt/eg
+RUN mkdir -p /opt/eg
 ENV EG=eg
-RUN touch /opt/eh
+RUN mkdir -p /opt/eh
 ENV EH=eh
-RUN touch /opt/ei
+RUN mkdir -p /opt/ei
 ENV EI=ei
-RUN touch /opt/ej
+RUN mkdir -p /opt/ej
 ENV EJ=ej
-RUN touch /opt/ek
+RUN mkdir -p /opt/ek
 ENV EK=ek
-RUN touch /opt/el
+RUN mkdir -p /opt/el
 ENV EL=el
-RUN touch /opt/em
+RUN mkdir -p /opt/em
 ENV EM=em
-RUN touch /opt/en
+RUN mkdir -p /opt/en
 ENV EN=en
-RUN touch /opt/eo
+RUN mkdir -p /opt/eo
 ENV EO=eo
-RUN touch /opt/ep
+RUN mkdir -p /opt/ep
 ENV EP=ep
-RUN touch /opt/eq
+RUN mkdir -p /opt/eq
 ENV EQ=eq
-RUN touch /opt/er
+RUN mkdir -p /opt/er
 ENV ER=er
-RUN touch /opt/es
+RUN mkdir -p /opt/es
 ENV ES=es
-RUN touch /opt/et
+RUN mkdir -p /opt/et
 ENV ET=et
-RUN touch /opt/eu
+RUN mkdir -p /opt/eu
 ENV EU=eu
-RUN touch /opt/ev
+RUN mkdir -p /opt/ev
 ENV EV=ev
-RUN touch /opt/ew
+RUN mkdir -p /opt/ew
 ENV EW=ew
-RUN touch /opt/ex
+RUN mkdir -p /opt/ex
 ENV EX=ex
-RUN touch /opt/ey
+RUN mkdir -p /opt/ey
 ENV EY=ey
-RUN touch /opt/ez
+RUN mkdir -p /opt/ez
 ENV EZ=ez
-RUN touch /opt/fa
+RUN mkdir -p /opt/fa
 ENV FA=fa
-RUN touch /opt/fb
+RUN mkdir -p /opt/fb
 ENV FB=fb
-RUN touch /opt/fc
+RUN mkdir -p /opt/fc
 ENV FC=fc
-RUN touch /opt/fd
+RUN mkdir -p /opt/fd
 ENV FD=fd
-RUN touch /opt/fe
+RUN mkdir -p /opt/fe
 ENV FE=fe
-RUN touch /opt/ff
+RUN mkdir -p /opt/ff
 ENV FF=ff
-RUN touch /opt/fg
+RUN mkdir -p /opt/fg
 ENV FG=fg
-RUN touch /opt/fh
+RUN mkdir -p /opt/fh
 ENV FH=fh
-RUN touch /opt/fi
+RUN mkdir -p /opt/fi
 ENV FI=fi
-RUN touch /opt/fj
+RUN mkdir -p /opt/fj
 ENV FJ=fj
-RUN touch /opt/fk
+RUN mkdir -p /opt/fk
 ENV FK=fk
-RUN touch /opt/fl
+RUN mkdir -p /opt/fl
 ENV FL=fl
-RUN touch /opt/fm
+RUN mkdir -p /opt/fm
 ENV FM=fm
-RUN touch /opt/fn
+RUN mkdir -p /opt/fn
 ENV FN=fn
-RUN touch /opt/fo
+RUN mkdir -p /opt/fo
 ENV FO=fo
-RUN touch /opt/fp
+RUN mkdir -p /opt/fp
 ENV FP=fp
-RUN touch /opt/fq
+RUN mkdir -p /opt/fq
 ENV FQ=fq
-RUN touch /opt/fr
+RUN mkdir -p /opt/fr
 ENV FR=fr
-RUN touch /opt/fs
+RUN mkdir -p /opt/fs
 ENV FS=fs
-RUN touch /opt/ft
+RUN mkdir -p /opt/ft
 ENV FT=ft
-RUN touch /opt/fu
+RUN mkdir -p /opt/fu
 ENV FU=fu
-RUN touch /opt/fv
+RUN mkdir -p /opt/fv
 ENV FV=fv
-RUN touch /opt/fw
+RUN mkdir -p /opt/fw
 ENV FW=fw
-RUN touch /opt/fx
+RUN mkdir -p /opt/fx
 ENV FX=fx
-RUN touch /opt/fy
+RUN mkdir -p /opt/fy
 ENV FY=fy
-RUN touch /opt/fz
+RUN mkdir -p /opt/fz
 ENV FZ=fz
-RUN touch /opt/ga
+RUN mkdir -p /opt/ga
 ENV GA=ga
-RUN touch /opt/gb
+RUN mkdir -p /opt/gb
 ENV GB=gb
-RUN touch /opt/gc
+RUN mkdir -p /opt/gc
 ENV GC=gc
-RUN touch /opt/gd
+RUN mkdir -p /opt/gd
 ENV GD=gd
-RUN touch /opt/ge
+RUN mkdir -p /opt/ge
 ENV GE=ge
-RUN touch /opt/gf
+RUN mkdir -p /opt/gf
 ENV GF=gf
-RUN touch /opt/gg
+RUN mkdir -p /opt/gg
 ENV GG=gg
-RUN touch /opt/gh
+RUN mkdir -p /opt/gh
 ENV GH=gh
-RUN touch /opt/gi
+RUN mkdir -p /opt/gi
 ENV GI=gi
-RUN touch /opt/gj
+RUN mkdir -p /opt/gj
 ENV GJ=gj
-RUN touch /opt/gk
+RUN mkdir -p /opt/gk
 ENV GK=gk
-RUN touch /opt/gl
+RUN mkdir -p /opt/gl
 ENV GL=gl
-RUN touch /opt/gm
+RUN mkdir -p /opt/gm
 ENV GM=gm
-RUN touch /opt/gn
+RUN mkdir -p /opt/gn
 ENV GN=gn
-RUN touch /opt/go
+RUN mkdir -p /opt/go
 ENV GO=go
-RUN touch /opt/gp
+RUN mkdir -p /opt/gp
 ENV GP=gp
-RUN touch /opt/gq
+RUN mkdir -p /opt/gq
 ENV GQ=gq
-RUN touch /opt/gr
+RUN mkdir -p /opt/gr
 ENV GR=gr
-RUN touch /opt/gs
+RUN mkdir -p /opt/gs
 ENV GS=gs
-RUN touch /opt/gt
+RUN mkdir -p /opt/gt
 ENV GT=gt
-RUN touch /opt/gu
+RUN mkdir -p /opt/gu
 ENV GU=gu
-RUN touch /opt/gv
+RUN mkdir -p /opt/gv
 ENV GV=gv
-RUN touch /opt/gw
+RUN mkdir -p /opt/gw
 ENV GW=gw
-RUN touch /opt/gx
+RUN mkdir -p /opt/gx
 ENV GX=gx
-RUN touch /opt/gy
+RUN mkdir -p /opt/gy
 ENV GY=gy
-RUN touch /opt/gz
+RUN mkdir -p /opt/gz
 ENV GZ=gz
-RUN touch /opt/ha
+RUN mkdir -p /opt/ha
 ENV HA=ha
-RUN touch /opt/hb
+RUN mkdir -p /opt/hb
 ENV HB=hb
-RUN touch /opt/hc
+RUN mkdir -p /opt/hc
 ENV HC=hc
-RUN touch /opt/hd
+RUN mkdir -p /opt/hd
 ENV HD=hd
-RUN touch /opt/he
+RUN mkdir -p /opt/he
 ENV HE=he
-RUN touch /opt/hf
+RUN mkdir -p /opt/hf
 ENV HF=hf
-RUN touch /opt/hg
+RUN mkdir -p /opt/hg
 ENV HG=hg
-RUN touch /opt/hh
+RUN mkdir -p /opt/hh
 ENV HH=hh
-RUN touch /opt/hi
+RUN mkdir -p /opt/hi
 ENV HI=hi
-RUN touch /opt/hj
+RUN mkdir -p /opt/hj
 ENV HJ=hj
-RUN touch /opt/hk
+RUN mkdir -p /opt/hk
 ENV HK=hk
-RUN touch /opt/hl
+RUN mkdir -p /opt/hl
 ENV HL=hl
-RUN touch /opt/hm
+RUN mkdir -p /opt/hm
 ENV HM=hm
-RUN touch /opt/hn
+RUN mkdir -p /opt/hn
 ENV HN=hn
-RUN touch /opt/ho
+RUN mkdir -p /opt/ho
 ENV HO=ho
-RUN touch /opt/hp
+RUN mkdir -p /opt/hp
 ENV HP=hp
-RUN touch /opt/hq
+RUN mkdir -p /opt/hq
 ENV HQ=hq
-RUN touch /opt/hr
+RUN mkdir -p /opt/hr
 ENV HR=hr
-RUN touch /opt/hs
+RUN mkdir -p /opt/hs
 ENV HS=hs
-RUN touch /opt/ht
+RUN mkdir -p /opt/ht
 ENV HT=ht
-RUN touch /opt/hu
+RUN mkdir -p /opt/hu
 ENV HU=hu
-RUN touch /opt/hv
+RUN mkdir -p /opt/hv
 ENV HV=hv
-RUN touch /opt/hw
+RUN mkdir -p /opt/hw
 ENV HW=hw
-RUN touch /opt/hx
+RUN mkdir -p /opt/hx
 ENV HX=hx
-RUN touch /opt/hy
+RUN mkdir -p /opt/hy
 ENV HY=hy
-RUN touch /opt/hz
+RUN mkdir -p /opt/hz
 ENV HZ=hz
-RUN touch /opt/ia
+RUN mkdir -p /opt/ia
 ENV IA=ia
-RUN touch /opt/ib
+RUN mkdir -p /opt/ib
 ENV IB=ib
-RUN touch /opt/ic
+RUN mkdir -p /opt/ic
 ENV IC=ic
-RUN touch /opt/id
+RUN mkdir -p /opt/id
 ENV ID=id
-RUN touch /opt/ie
+RUN mkdir -p /opt/ie
 ENV IE=ie
-RUN touch /opt/if
+RUN mkdir -p /opt/if
 ENV IF=if
-RUN touch /opt/ig
+RUN mkdir -p /opt/ig
 ENV IG=ig
-RUN touch /opt/ih
+RUN mkdir -p /opt/ih
 ENV IH=ih
-RUN touch /opt/ii
+RUN mkdir -p /opt/ii
 ENV II=ii
-RUN touch /opt/ij
+RUN mkdir -p /opt/ij
 ENV IJ=ij
-RUN touch /opt/ik
+RUN mkdir -p /opt/ik
 ENV IK=ik
-RUN touch /opt/il
+RUN mkdir -p /opt/il
 ENV IL=il
-RUN touch /opt/im
+RUN mkdir -p /opt/im
 ENV IM=im
-RUN touch /opt/in
+RUN mkdir -p /opt/in
 ENV IN=in
-RUN touch /opt/io
+RUN mkdir -p /opt/io
 ENV IO=io
-RUN touch /opt/ip
+RUN mkdir -p /opt/ip
 ENV IP=ip
-RUN touch /opt/iq
+RUN mkdir -p /opt/iq
 ENV IQ=iq
-RUN touch /opt/ir
+RUN mkdir -p /opt/ir
 ENV IR=ir
-RUN touch /opt/is
+RUN mkdir -p /opt/is
 ENV IS=is
-RUN touch /opt/it
+RUN mkdir -p /opt/it
 ENV IT=it
-RUN touch /opt/iu
+RUN mkdir -p /opt/iu
 ENV IU=iu
-RUN touch /opt/iv
+RUN mkdir -p /opt/iv
 ENV IV=iv
-RUN touch /opt/iw
+RUN mkdir -p /opt/iw
 ENV IW=iw
-RUN touch /opt/ix
+RUN mkdir -p /opt/ix
 ENV IX=ix
-RUN touch /opt/iy
+RUN mkdir -p /opt/iy
 ENV IY=iy
-RUN touch /opt/iz
+RUN mkdir -p /opt/iz
 ENV IZ=iz
-RUN touch /opt/ja
+RUN mkdir -p /opt/ja
 ENV JA=ja
-RUN touch /opt/jb
+RUN mkdir -p /opt/jb
 ENV JB=jb
-RUN touch /opt/jc
+RUN mkdir -p /opt/jc
 ENV JC=jc
-RUN touch /opt/jd
+RUN mkdir -p /opt/jd
 ENV JD=jd
-RUN touch /opt/je
+RUN mkdir -p /opt/je
 ENV JE=je
-RUN touch /opt/jf
+RUN mkdir -p /opt/jf
 ENV JF=jf
-RUN touch /opt/jg
+RUN mkdir -p /opt/jg
 ENV JG=jg
-RUN touch /opt/jh
+RUN mkdir -p /opt/jh
 ENV JH=jh
-RUN touch /opt/ji
+RUN mkdir -p /opt/ji
 ENV JI=ji
-RUN touch /opt/jj
+RUN mkdir -p /opt/jj
 ENV JJ=jj
-RUN touch /opt/jk
+RUN mkdir -p /opt/jk
 ENV JK=jk
-RUN touch /opt/jl
+RUN mkdir -p /opt/jl
 ENV JL=jl
-RUN touch /opt/jm
+RUN mkdir -p /opt/jm
 ENV JM=jm
-RUN touch /opt/jn
+RUN mkdir -p /opt/jn
 ENV JN=jn
-RUN touch /opt/jo
+RUN mkdir -p /opt/jo
 ENV JO=jo
-RUN touch /opt/jp
+RUN mkdir -p /opt/jp
 ENV JP=jp
-RUN touch /opt/jq
+RUN mkdir -p /opt/jq
 ENV JQ=jq
-RUN touch /opt/jr
+RUN mkdir -p /opt/jr
 ENV JR=jr
-RUN touch /opt/js
+RUN mkdir -p /opt/js
 ENV JS=js
-RUN touch /opt/jt
+RUN mkdir -p /opt/jt
 ENV JT=jt
-RUN touch /opt/ju
+RUN mkdir -p /opt/ju
 ENV JU=ju
-RUN touch /opt/jv
+RUN mkdir -p /opt/jv
 ENV JV=jv
-RUN touch /opt/jw
+RUN mkdir -p /opt/jw
 ENV JW=jw
-RUN touch /opt/jx
+RUN mkdir -p /opt/jx
 ENV JX=jx
-RUN touch /opt/jy
+RUN mkdir -p /opt/jy
 ENV JY=jy
-RUN touch /opt/jz
+RUN mkdir -p /opt/jz
 ENV JZ=jz
-RUN touch /opt/ka
+RUN mkdir -p /opt/ka
 ENV KA=ka
-RUN touch /opt/kb
+RUN mkdir -p /opt/kb
 ENV KB=kb
-RUN touch /opt/kc
+RUN mkdir -p /opt/kc
 ENV KC=kc
-RUN touch /opt/kd
+RUN mkdir -p /opt/kd
 ENV KD=kd
-RUN touch /opt/ke
+RUN mkdir -p /opt/ke
 ENV KE=ke
-RUN touch /opt/kf
+RUN mkdir -p /opt/kf
 ENV KF=kf
-RUN touch /opt/kg
+RUN mkdir -p /opt/kg
 ENV KG=kg
-RUN touch /opt/kh
+RUN mkdir -p /opt/kh
 ENV KH=kh
-RUN touch /opt/ki
+RUN mkdir -p /opt/ki
 ENV KI=ki
-RUN touch /opt/kj
+RUN mkdir -p /opt/kj
 ENV KJ=kj
-RUN touch /opt/kk
+RUN mkdir -p /opt/kk
 ENV KK=kk
-RUN touch /opt/kl
+RUN mkdir -p /opt/kl
 ENV KL=kl
-RUN touch /opt/km
+RUN mkdir -p /opt/km
 ENV KM=km
-RUN touch /opt/kn
+RUN mkdir -p /opt/kn
 ENV KN=kn
-RUN touch /opt/ko
+RUN mkdir -p /opt/ko
 ENV KO=ko
-RUN touch /opt/kp
+RUN mkdir -p /opt/kp
 ENV KP=kp
-RUN touch /opt/kq
+RUN mkdir -p /opt/kq
 ENV KQ=kq
-RUN touch /opt/kr
+RUN mkdir -p /opt/kr
 ENV KR=kr
-RUN touch /opt/ks
+RUN mkdir -p /opt/ks
 ENV KS=ks
-RUN touch /opt/kt
+RUN mkdir -p /opt/kt
 ENV KT=kt
-RUN touch /opt/ku
+RUN mkdir -p /opt/ku
 ENV KU=ku
-RUN touch /opt/kv
+RUN mkdir -p /opt/kv
 ENV KV=kv
-RUN touch /opt/kw
+RUN mkdir -p /opt/kw
 ENV KW=kw
-RUN touch /opt/kx
+RUN mkdir -p /opt/kx
 ENV KX=kx
-RUN touch /opt/ky
+RUN mkdir -p /opt/ky
 ENV KY=ky
-RUN touch /opt/kz
+RUN mkdir -p /opt/kz
 ENV KZ=kz
-RUN touch /opt/la
+RUN mkdir -p /opt/la
 ENV LA=la
-RUN touch /opt/lb
+RUN mkdir -p /opt/lb
 ENV LB=lb
-RUN touch /opt/lc
+RUN mkdir -p /opt/lc
 ENV LC=lc
-RUN touch /opt/ld
+RUN mkdir -p /opt/ld
 ENV LD=ld
-RUN touch /opt/le
+RUN mkdir -p /opt/le
 ENV LE=le
-RUN touch /opt/lf
+RUN mkdir -p /opt/lf
 ENV LF=lf
-RUN touch /opt/lg
+RUN mkdir -p /opt/lg
 ENV LG=lg
-RUN touch /opt/lh
+RUN mkdir -p /opt/lh
 ENV LH=lh
-RUN touch /opt/li
+RUN mkdir -p /opt/li
 ENV LI=li
-RUN touch /opt/lj
+RUN mkdir -p /opt/lj
 ENV LJ=lj
-RUN touch /opt/lk
+RUN mkdir -p /opt/lk
 ENV LK=lk
-RUN touch /opt/ll
+RUN mkdir -p /opt/ll
 ENV LL=ll
-RUN touch /opt/lm
+RUN mkdir -p /opt/lm
 ENV LM=lm
-RUN touch /opt/ln
+RUN mkdir -p /opt/ln
 ENV LN=ln
-RUN touch /opt/lo
+RUN mkdir -p /opt/lo
 ENV LO=lo
-RUN touch /opt/lp
+RUN mkdir -p /opt/lp
 ENV LP=lp
-RUN touch /opt/lq
+RUN mkdir -p /opt/lq
 ENV LQ=lq
-RUN touch /opt/lr
+RUN mkdir -p /opt/lr
 ENV LR=lr
-RUN touch /opt/ls
+RUN mkdir -p /opt/ls
 ENV LS=ls
-RUN touch /opt/lt
+RUN mkdir -p /opt/lt
 ENV LT=lt
-RUN touch /opt/lu
+RUN mkdir -p /opt/lu
 ENV LU=lu
-RUN touch /opt/lv
+RUN mkdir -p /opt/lv
 ENV LV=lv
-RUN touch /opt/lw
+RUN mkdir -p /opt/lw
 ENV LW=lw
-RUN touch /opt/lx
+RUN mkdir -p /opt/lx
 ENV LX=lx
-RUN touch /opt/ly
+RUN mkdir -p /opt/ly
 ENV LY=ly
-RUN touch /opt/lz
+RUN mkdir -p /opt/lz
 ENV LZ=lz
-RUN touch /opt/ma
+RUN mkdir -p /opt/ma
 ENV MA=ma
-RUN touch /opt/mb
+RUN mkdir -p /opt/mb
 ENV MB=mb
-RUN touch /opt/mc
+RUN mkdir -p /opt/mc
 ENV MC=mc
-RUN touch /opt/md
+RUN mkdir -p /opt/md
 ENV MD=md
-RUN touch /opt/me
+RUN mkdir -p /opt/me
 ENV ME=me
-RUN touch /opt/mf
+RUN mkdir -p /opt/mf
 ENV MF=mf
-RUN touch /opt/mg
+RUN mkdir -p /opt/mg
 ENV MG=mg
-RUN touch /opt/mh
+RUN mkdir -p /opt/mh
 ENV MH=mh
-RUN touch /opt/mi
+RUN mkdir -p /opt/mi
 ENV MI=mi
-RUN touch /opt/mj
+RUN mkdir -p /opt/mj
 ENV MJ=mj
-RUN touch /opt/mk
+RUN mkdir -p /opt/mk
 ENV MK=mk
-RUN touch /opt/ml
+RUN mkdir -p /opt/ml
 ENV ML=ml
-RUN touch /opt/mm
+RUN mkdir -p /opt/mm
 ENV MM=mm
-RUN touch /opt/mn
+RUN mkdir -p /opt/mn
 ENV MN=mn
-RUN touch /opt/mo
+RUN mkdir -p /opt/mo
 ENV MO=mo
-RUN touch /opt/mp
+RUN mkdir -p /opt/mp
 ENV MP=mp
-RUN touch /opt/mq
+RUN mkdir -p /opt/mq
 ENV MQ=mq
-RUN touch /opt/mr
+RUN mkdir -p /opt/mr
 ENV MR=mr
-RUN touch /opt/ms
+RUN mkdir -p /opt/ms
 ENV MS=ms
-RUN touch /opt/mt
+RUN mkdir -p /opt/mt
 ENV MT=mt
-RUN touch /opt/mu
+RUN mkdir -p /opt/mu
 ENV MU=mu
-RUN touch /opt/mv
+RUN mkdir -p /opt/mv
 ENV MV=mv
-RUN touch /opt/mw
+RUN mkdir -p /opt/mw
 ENV MW=mw
-RUN touch /opt/mx
+RUN mkdir -p /opt/mx
 ENV MX=mx
-RUN touch /opt/my
+RUN mkdir -p /opt/my
 ENV MY=my
-RUN touch /opt/mz
+RUN mkdir -p /opt/mz
 ENV MZ=mz
-RUN touch /opt/na
+RUN mkdir -p /opt/na
 ENV NA=na
-RUN touch /opt/nb
+RUN mkdir -p /opt/nb
 ENV NB=nb
-RUN touch /opt/nc
+RUN mkdir -p /opt/nc
 ENV NC=nc
-RUN touch /opt/nd
+RUN mkdir -p /opt/nd
 ENV ND=nd
-RUN touch /opt/ne
+RUN mkdir -p /opt/ne
 ENV NE=ne
-RUN touch /opt/nf
+RUN mkdir -p /opt/nf
 ENV NF=nf
-RUN touch /opt/ng
+RUN mkdir -p /opt/ng
 ENV NG=ng
-RUN touch /opt/nh
+RUN mkdir -p /opt/nh
 ENV NH=nh
-RUN touch /opt/ni
+RUN mkdir -p /opt/ni
 ENV NI=ni
-RUN touch /opt/nj
+RUN mkdir -p /opt/nj
 ENV NJ=nj
-RUN touch /opt/nk
+RUN mkdir -p /opt/nk
 ENV NK=nk
-RUN touch /opt/nl
+RUN mkdir -p /opt/nl
 ENV NL=nl
-RUN touch /opt/nm
+RUN mkdir -p /opt/nm
 ENV NM=nm
-RUN touch /opt/nn
+RUN mkdir -p /opt/nn
 ENV NN=nn
-RUN touch /opt/no
+RUN mkdir -p /opt/no
 ENV NO=no
-RUN touch /opt/np
+RUN mkdir -p /opt/np
 ENV NP=np
-RUN touch /opt/nq
+RUN mkdir -p /opt/nq
 ENV NQ=nq
-RUN touch /opt/nr
+RUN mkdir -p /opt/nr
 ENV NR=nr
-RUN touch /opt/ns
+RUN mkdir -p /opt/ns
 ENV NS=ns
-RUN touch /opt/nt
+RUN mkdir -p /opt/nt
 ENV NT=nt
-RUN touch /opt/nu
+RUN mkdir -p /opt/nu
 ENV NU=nu
-RUN touch /opt/nv
+RUN mkdir -p /opt/nv
 ENV NV=nv
-RUN touch /opt/nw
+RUN mkdir -p /opt/nw
 ENV NW=nw
-RUN touch /opt/nx
+RUN mkdir -p /opt/nx
 ENV NX=nx
-RUN touch /opt/ny
+RUN mkdir -p /opt/ny
 ENV NY=ny
-RUN touch /opt/nz
+RUN mkdir -p /opt/nz
 ENV NZ=nz
-RUN touch /opt/oa
+RUN mkdir -p /opt/oa
 ENV OA=oa
-RUN touch /opt/ob
+RUN mkdir -p /opt/ob
 ENV OB=ob
-RUN touch /opt/oc
+RUN mkdir -p /opt/oc
 ENV OC=oc
-RUN touch /opt/od
+RUN mkdir -p /opt/od
 ENV OD=od
-RUN touch /opt/oe
+RUN mkdir -p /opt/oe
 ENV OE=oe
-RUN touch /opt/of
+RUN mkdir -p /opt/of
 ENV OF=of
-RUN touch /opt/og
+RUN mkdir -p /opt/og
 ENV OG=og
-RUN touch /opt/oh
+RUN mkdir -p /opt/oh
 ENV OH=oh
-RUN touch /opt/oi
+RUN mkdir -p /opt/oi
 ENV OI=oi
-RUN touch /opt/oj
+RUN mkdir -p /opt/oj
 ENV OJ=oj
-RUN touch /opt/ok
+RUN mkdir -p /opt/ok
 ENV OK=ok
-RUN touch /opt/ol
+RUN mkdir -p /opt/ol
 ENV OL=ol
-RUN touch /opt/om
+RUN mkdir -p /opt/om
 ENV OM=om
-RUN touch /opt/on
+RUN mkdir -p /opt/on
 ENV ON=on
-RUN touch /opt/oo
+RUN mkdir -p /opt/oo
 ENV OO=oo
-RUN touch /opt/op
+RUN mkdir -p /opt/op
 ENV OP=op
-RUN touch /opt/oq
+RUN mkdir -p /opt/oq
 ENV OQ=oq
-RUN touch /opt/or
+RUN mkdir -p /opt/or
 ENV OR=or
-RUN touch /opt/os
+RUN mkdir -p /opt/os
 ENV OS=os
-RUN touch /opt/ot
+RUN mkdir -p /opt/ot
 ENV OT=ot
-RUN touch /opt/ou
+RUN mkdir -p /opt/ou
 ENV OU=ou
-RUN touch /opt/ov
+RUN mkdir -p /opt/ov
 ENV OV=ov
-RUN touch /opt/ow
+RUN mkdir -p /opt/ow
 ENV OW=ow
-RUN touch /opt/ox
+RUN mkdir -p /opt/ox
 ENV OX=ox
-RUN touch /opt/oy
+RUN mkdir -p /opt/oy
 ENV OY=oy
-RUN touch /opt/oz
+RUN mkdir -p /opt/oz
 ENV OZ=oz
-RUN touch /opt/pa
+RUN mkdir -p /opt/pa
 ENV PA=pa
-RUN touch /opt/pb
+RUN mkdir -p /opt/pb
 ENV PB=pb
-RUN touch /opt/pc
+RUN mkdir -p /opt/pc
 ENV PC=pc
-RUN touch /opt/pd
+RUN mkdir -p /opt/pd
 ENV PD=pd
-RUN touch /opt/pe
+RUN mkdir -p /opt/pe
 ENV PE=pe
-RUN touch /opt/pf
+RUN mkdir -p /opt/pf
 ENV PF=pf
-RUN touch /opt/pg
+RUN mkdir -p /opt/pg
 ENV PG=pg
-RUN touch /opt/ph
+RUN mkdir -p /opt/ph
 ENV PH=ph
-RUN touch /opt/pi
+RUN mkdir -p /opt/pi
 ENV PI=pi
-RUN touch /opt/pj
+RUN mkdir -p /opt/pj
 ENV PJ=pj
-RUN touch /opt/pk
+RUN mkdir -p /opt/pk
 ENV PK=pk
-RUN touch /opt/pl
+RUN mkdir -p /opt/pl
 ENV PL=pl
-RUN touch /opt/pm
+RUN mkdir -p /opt/pm
 ENV PM=pm
-RUN touch /opt/pn
+RUN mkdir -p /opt/pn
 ENV PN=pn
-RUN touch /opt/po
+RUN mkdir -p /opt/po
 ENV PO=po
-RUN touch /opt/pp
+RUN mkdir -p /opt/pp
 ENV PP=pp
-RUN touch /opt/pq
+RUN mkdir -p /opt/pq
 ENV PQ=pq
-RUN touch /opt/pr
+RUN mkdir -p /opt/pr
 ENV PR=pr
-RUN touch /opt/ps
+RUN mkdir -p /opt/ps
 ENV PS=ps
-RUN touch /opt/pt
+RUN mkdir -p /opt/pt
 ENV PT=pt
-RUN touch /opt/pu
+RUN mkdir -p /opt/pu
 ENV PU=pu
-RUN touch /opt/pv
+RUN mkdir -p /opt/pv
 ENV PV=pv
-RUN touch /opt/pw
+RUN mkdir -p /opt/pw
 ENV PW=pw
-RUN touch /opt/px
+RUN mkdir -p /opt/px
 ENV PX=px
-RUN touch /opt/py
+RUN mkdir -p /opt/py
 ENV PY=py
-RUN touch /opt/pz
+RUN mkdir -p /opt/pz
 ENV PZ=pz
-RUN touch /opt/qa
+RUN mkdir -p /opt/qa
 ENV QA=qa
-RUN touch /opt/qb
+RUN mkdir -p /opt/qb
 ENV QB=qb
-RUN touch /opt/qc
+RUN mkdir -p /opt/qc
 ENV QC=qc
-RUN touch /opt/qd
+RUN mkdir -p /opt/qd
 ENV QD=qd
-RUN touch /opt/qe
+RUN mkdir -p /opt/qe
 ENV QE=qe
-RUN touch /opt/qf
+RUN mkdir -p /opt/qf
 ENV QF=qf
-RUN touch /opt/qg
+RUN mkdir -p /opt/qg
 ENV QG=qg
-RUN touch /opt/qh
+RUN mkdir -p /opt/qh
 ENV QH=qh
-RUN touch /opt/qi
+RUN mkdir -p /opt/qi
 ENV QI=qi
-RUN touch /opt/qj
+RUN mkdir -p /opt/qj
 ENV QJ=qj
-RUN touch /opt/qk
+RUN mkdir -p /opt/qk
 ENV QK=qk
-RUN touch /opt/ql
+RUN mkdir -p /opt/ql
 ENV QL=ql
-RUN touch /opt/qm
+RUN mkdir -p /opt/qm
 ENV QM=qm
-RUN touch /opt/qn
+RUN mkdir -p /opt/qn
 ENV QN=qn
-RUN touch /opt/qo
+RUN mkdir -p /opt/qo
 ENV QO=qo
-RUN touch /opt/qp
+RUN mkdir -p /opt/qp
 ENV QP=qp
-RUN touch /opt/qq
+RUN mkdir -p /opt/qq
 ENV QQ=qq
-RUN touch /opt/qr
+RUN mkdir -p /opt/qr
 ENV QR=qr
-RUN touch /opt/qs
+RUN mkdir -p /opt/qs
 ENV QS=qs
-RUN touch /opt/qt
+RUN mkdir -p /opt/qt
 ENV QT=qt
-RUN touch /opt/qu
+RUN mkdir -p /opt/qu
 ENV QU=qu
-RUN touch /opt/qv
+RUN mkdir -p /opt/qv
 ENV QV=qv
-RUN touch /opt/qw
+RUN mkdir -p /opt/qw
 ENV QW=qw
-RUN touch /opt/qx
+RUN mkdir -p /opt/qx
 ENV QX=qx
-RUN touch /opt/qy
+RUN mkdir -p /opt/qy
 ENV QY=qy
-RUN touch /opt/qz
+RUN mkdir -p /opt/qz
 ENV QZ=qz
-RUN touch /opt/ra
+RUN mkdir -p /opt/ra
 ENV RA=ra
-RUN touch /opt/rb
+RUN mkdir -p /opt/rb
 ENV RB=rb
-RUN touch /opt/rc
+RUN mkdir -p /opt/rc
 ENV RC=rc
-RUN touch /opt/rd
+RUN mkdir -p /opt/rd
 ENV RD=rd
-RUN touch /opt/re
+RUN mkdir -p /opt/re
 ENV RE=re
-RUN touch /opt/rf
+RUN mkdir -p /opt/rf
 ENV RF=rf
-RUN touch /opt/rg
+RUN mkdir -p /opt/rg
 ENV RG=rg
-RUN touch /opt/rh
+RUN mkdir -p /opt/rh
 ENV RH=rh
-RUN touch /opt/ri
+RUN mkdir -p /opt/ri
 ENV RI=ri
-RUN touch /opt/rj
+RUN mkdir -p /opt/rj
 ENV RJ=rj
-RUN touch /opt/rk
+RUN mkdir -p /opt/rk
 ENV RK=rk
-RUN touch /opt/rl
+RUN mkdir -p /opt/rl
 ENV RL=rl
-RUN touch /opt/rm
+RUN mkdir -p /opt/rm
 ENV RM=rm
-RUN touch /opt/rn
+RUN mkdir -p /opt/rn
 ENV RN=rn
-RUN touch /opt/ro
+RUN mkdir -p /opt/ro
 ENV RO=ro
-RUN touch /opt/rp
+RUN mkdir -p /opt/rp
 ENV RP=rp
-RUN touch /opt/rq
+RUN mkdir -p /opt/rq
 ENV RQ=rq
-RUN touch /opt/rr
+RUN mkdir -p /opt/rr
 ENV RR=rr
-RUN touch /opt/rs
+RUN mkdir -p /opt/rs
 ENV RS=rs
-RUN touch /opt/rt
+RUN mkdir -p /opt/rt
 ENV RT=rt
-RUN touch /opt/ru
+RUN mkdir -p /opt/ru
 ENV RU=ru
-RUN touch /opt/rv
+RUN mkdir -p /opt/rv
 ENV RV=rv
-RUN touch /opt/rw
+RUN mkdir -p /opt/rw
 ENV RW=rw
-RUN touch /opt/rx
+RUN mkdir -p /opt/rx
 ENV RX=rx
-RUN touch /opt/ry
+RUN mkdir -p /opt/ry
 ENV RY=ry
-RUN touch /opt/rz
+RUN mkdir -p /opt/rz
 ENV RZ=rz
-RUN touch /opt/sa
+RUN mkdir -p /opt/sa
 ENV SA=sa
-RUN touch /opt/sb
+RUN mkdir -p /opt/sb
 ENV SB=sb
-RUN touch /opt/sc
+RUN mkdir -p /opt/sc
 ENV SC=sc
-RUN touch /opt/sd
+RUN mkdir -p /opt/sd
 ENV SD=sd
-RUN touch /opt/se
+RUN mkdir -p /opt/se
 ENV SE=se
-RUN touch /opt/sf
+RUN mkdir -p /opt/sf
 ENV SF=sf
-RUN touch /opt/sg
+RUN mkdir -p /opt/sg
 ENV SG=sg
-RUN touch /opt/sh
+RUN mkdir -p /opt/sh
 ENV SH=sh
-RUN touch /opt/si
+RUN mkdir -p /opt/si
 ENV SI=si
-RUN touch /opt/sj
+RUN mkdir -p /opt/sj
 ENV SJ=sj
-RUN touch /opt/sk
+RUN mkdir -p /opt/sk
 ENV SK=sk
-RUN touch /opt/sl
+RUN mkdir -p /opt/sl
 ENV SL=sl
-RUN touch /opt/sm
+RUN mkdir -p /opt/sm
 ENV SM=sm
-RUN touch /opt/sn
+RUN mkdir -p /opt/sn
 ENV SN=sn
-RUN touch /opt/so
+RUN mkdir -p /opt/so
 ENV SO=so
-RUN touch /opt/sp
+RUN mkdir -p /opt/sp
 ENV SP=sp
-RUN touch /opt/sq
+RUN mkdir -p /opt/sq
 ENV SQ=sq
-RUN touch /opt/sr
+RUN mkdir -p /opt/sr
 ENV SR=sr
-RUN touch /opt/ss
+RUN mkdir -p /opt/ss
 ENV SS=ss
-RUN touch /opt/st
+RUN mkdir -p /opt/st
 ENV ST=st
-RUN touch /opt/su
+RUN mkdir -p /opt/su
 ENV SU=su
-RUN touch /opt/sv
+RUN mkdir -p /opt/sv
 ENV SV=sv
-RUN touch /opt/sw
+RUN mkdir -p /opt/sw
 ENV SW=sw
-RUN touch /opt/sx
+RUN mkdir -p /opt/sx
 ENV SX=sx
-RUN touch /opt/sy
+RUN mkdir -p /opt/sy
 ENV SY=sy
-RUN touch /opt/sz
+RUN mkdir -p /opt/sz
 ENV SZ=sz
-RUN touch /opt/ta
+RUN mkdir -p /opt/ta
 ENV TA=ta
-RUN touch /opt/tb
+RUN mkdir -p /opt/tb
 ENV TB=tb
-RUN touch /opt/tc
+RUN mkdir -p /opt/tc
 ENV TC=tc
-RUN touch /opt/td
+RUN mkdir -p /opt/td
 ENV TD=td
-RUN touch /opt/te
+RUN mkdir -p /opt/te
 ENV TE=te
-RUN touch /opt/tf
+RUN mkdir -p /opt/tf
 ENV TF=tf
-RUN touch /opt/tg
+RUN mkdir -p /opt/tg
 ENV TG=tg
-RUN touch /opt/th
+RUN mkdir -p /opt/th
 ENV TH=th
-RUN touch /opt/ti
+RUN mkdir -p /opt/ti
 ENV TI=ti
-RUN touch /opt/tj
+RUN mkdir -p /opt/tj
 ENV TJ=tj
-RUN touch /opt/tk
+RUN mkdir -p /opt/tk
 ENV TK=tk
-RUN touch /opt/tl
+RUN mkdir -p /opt/tl
 ENV TL=tl
-RUN touch /opt/tm
+RUN mkdir -p /opt/tm
 ENV TM=tm
-RUN touch /opt/tn
+RUN mkdir -p /opt/tn
 ENV TN=tn
-RUN touch /opt/to
+RUN mkdir -p /opt/to
 ENV TO=to
-RUN touch /opt/tp
+RUN mkdir -p /opt/tp
 ENV TP=tp
-RUN touch /opt/tq
+RUN mkdir -p /opt/tq
 ENV TQ=tq
-RUN touch /opt/tr
+RUN mkdir -p /opt/tr
 ENV TR=tr
-RUN touch /opt/ts
+RUN mkdir -p /opt/ts
 ENV TS=ts
-RUN touch /opt/tt
+RUN mkdir -p /opt/tt
 ENV TT=tt
-RUN touch /opt/tu
+RUN mkdir -p /opt/tu
 ENV TU=tu
-RUN touch /opt/tv
+RUN mkdir -p /opt/tv
 ENV TV=tv
-RUN touch /opt/tw
+RUN mkdir -p /opt/tw
 ENV TW=tw
-RUN touch /opt/tx
+RUN mkdir -p /opt/tx
 ENV TX=tx
-RUN touch /opt/ty
+RUN mkdir -p /opt/ty
 ENV TY=ty
-RUN touch /opt/tz
+RUN mkdir -p /opt/tz
 ENV TZ=tz
-RUN touch /opt/ua
+RUN mkdir -p /opt/ua
 ENV UA=ua
-RUN touch /opt/ub
+RUN mkdir -p /opt/ub
 ENV UB=ub
-RUN touch /opt/uc
+RUN mkdir -p /opt/uc
 ENV UC=uc
-RUN touch /opt/ud
+RUN mkdir -p /opt/ud
 ENV UD=ud
-RUN touch /opt/ue
+RUN mkdir -p /opt/ue
 ENV UE=ue
-RUN touch /opt/uf
+RUN mkdir -p /opt/uf
 ENV UF=uf
-RUN touch /opt/ug
+RUN mkdir -p /opt/ug
 ENV UG=ug
-RUN touch /opt/uh
+RUN mkdir -p /opt/uh
 ENV UH=uh
-RUN touch /opt/ui
+RUN mkdir -p /opt/ui
 ENV UI=ui
-RUN touch /opt/uj
+RUN mkdir -p /opt/uj
 ENV UJ=uj
-RUN touch /opt/uk
+RUN mkdir -p /opt/uk
 ENV UK=uk
-RUN touch /opt/ul
+RUN mkdir -p /opt/ul
 ENV UL=ul
-RUN touch /opt/um
+RUN mkdir -p /opt/um
 ENV UM=um
-RUN touch /opt/un
+RUN mkdir -p /opt/un
 ENV UN=un
-RUN touch /opt/uo
+RUN mkdir -p /opt/uo
 ENV UO=uo
-RUN touch /opt/up
+RUN mkdir -p /opt/up
 ENV UP=up
-RUN touch /opt/uq
+RUN mkdir -p /opt/uq
 ENV UQ=uq
-RUN touch /opt/ur
+RUN mkdir -p /opt/ur
 ENV UR=ur
-RUN touch /opt/us
+RUN mkdir -p /opt/us
 ENV US=us
-RUN touch /opt/ut
+RUN mkdir -p /opt/ut
 ENV UT=ut
-RUN touch /opt/uu
+RUN mkdir -p /opt/uu
 ENV UU=uu
-RUN touch /opt/uv
+RUN mkdir -p /opt/uv
 ENV UV=uv
-RUN touch /opt/uw
+RUN mkdir -p /opt/uw
 ENV UW=uw
-RUN touch /opt/ux
+RUN mkdir -p /opt/ux
 ENV UX=ux
-RUN touch /opt/uy
+RUN mkdir -p /opt/uy
 ENV UY=uy
-RUN touch /opt/uz
+RUN mkdir -p /opt/uz
 ENV UZ=uz
-RUN touch /opt/va
+RUN mkdir -p /opt/va
 ENV VA=va
-RUN touch /opt/vb
+RUN mkdir -p /opt/vb
 ENV VB=vb
-RUN touch /opt/vc
+RUN mkdir -p /opt/vc
 ENV VC=vc
-RUN touch /opt/vd
+RUN mkdir -p /opt/vd
 ENV VD=vd
-RUN touch /opt/ve
+RUN mkdir -p /opt/ve
 ENV VE=ve
-RUN touch /opt/vf
+RUN mkdir -p /opt/vf
 ENV VF=vf
-RUN touch /opt/vg
+RUN mkdir -p /opt/vg
 ENV VG=vg
-RUN touch /opt/vh
+RUN mkdir -p /opt/vh
 ENV VH=vh
-RUN touch /opt/vi
+RUN mkdir -p /opt/vi
 ENV VI=vi
-RUN touch /opt/vj
+RUN mkdir -p /opt/vj
 ENV VJ=vj
-RUN touch /opt/vk
+RUN mkdir -p /opt/vk
 ENV VK=vk
-RUN touch /opt/vl
+RUN mkdir -p /opt/vl
 ENV VL=vl
-RUN touch /opt/vm
+RUN mkdir -p /opt/vm
 ENV VM=vm
-RUN touch /opt/vn
+RUN mkdir -p /opt/vn
 ENV VN=vn
-RUN touch /opt/vo
+RUN mkdir -p /opt/vo
 ENV VO=vo
-RUN touch /opt/vp
+RUN mkdir -p /opt/vp
 ENV VP=vp
-RUN touch /opt/vq
+RUN mkdir -p /opt/vq
 ENV VQ=vq
-RUN touch /opt/vr
+RUN mkdir -p /opt/vr
 ENV VR=vr
-RUN touch /opt/vs
+RUN mkdir -p /opt/vs
 ENV VS=vs
-RUN touch /opt/vt
+RUN mkdir -p /opt/vt
 ENV VT=vt
-RUN touch /opt/vu
+RUN mkdir -p /opt/vu
 ENV VU=vu
-RUN touch /opt/vv
+RUN mkdir -p /opt/vv
 ENV VV=vv
-RUN touch /opt/vw
+RUN mkdir -p /opt/vw
 ENV VW=vw
-RUN touch /opt/vx
+RUN mkdir -p /opt/vx
 ENV VX=vx
-RUN touch /opt/vy
+RUN mkdir -p /opt/vy
 ENV VY=vy
-RUN touch /opt/vz
+RUN mkdir -p /opt/vz
 ENV VZ=vz
-RUN touch /opt/wa
+RUN mkdir -p /opt/wa
 ENV WA=wa
-RUN touch /opt/wb
+RUN mkdir -p /opt/wb
 ENV WB=wb
-RUN touch /opt/wc
+RUN mkdir -p /opt/wc
 ENV WC=wc
-RUN touch /opt/wd
+RUN mkdir -p /opt/wd
 ENV WD=wd
-RUN touch /opt/we
+RUN mkdir -p /opt/we
 ENV WE=we
-RUN touch /opt/wf
+RUN mkdir -p /opt/wf
 ENV WF=wf
-RUN touch /opt/wg
+RUN mkdir -p /opt/wg
 ENV WG=wg
-RUN touch /opt/wh
+RUN mkdir -p /opt/wh
 ENV WH=wh
-RUN touch /opt/wi
+RUN mkdir -p /opt/wi
 ENV WI=wi
-RUN touch /opt/wj
+RUN mkdir -p /opt/wj
 ENV WJ=wj
-RUN touch /opt/wk
+RUN mkdir -p /opt/wk
 ENV WK=wk
-RUN touch /opt/wl
+RUN mkdir -p /opt/wl
 ENV WL=wl
-RUN touch /opt/wm
+RUN mkdir -p /opt/wm
 ENV WM=wm
-RUN touch /opt/wn
+RUN mkdir -p /opt/wn
 ENV WN=wn
-RUN touch /opt/wo
+RUN mkdir -p /opt/wo
 ENV WO=wo
-RUN touch /opt/wp
+RUN mkdir -p /opt/wp
 ENV WP=wp
-RUN touch /opt/wq
+RUN mkdir -p /opt/wq
 ENV WQ=wq
-RUN touch /opt/wr
+RUN mkdir -p /opt/wr
 ENV WR=wr
-RUN touch /opt/ws
+RUN mkdir -p /opt/ws
 ENV WS=ws
-RUN touch /opt/wt
+RUN mkdir -p /opt/wt
 ENV WT=wt
-RUN touch /opt/wu
+RUN mkdir -p /opt/wu
 ENV WU=wu
-RUN touch /opt/wv
+RUN mkdir -p /opt/wv
 ENV WV=wv
-RUN touch /opt/ww
+RUN mkdir -p /opt/ww
 ENV WW=ww
-RUN touch /opt/wx
+RUN mkdir -p /opt/wx
 ENV WX=wx
-RUN touch /opt/wy
+RUN mkdir -p /opt/wy
 ENV WY=wy
-RUN touch /opt/wz
+RUN mkdir -p /opt/wz
 ENV WZ=wz
-RUN touch /opt/xa
+RUN mkdir -p /opt/xa
 ENV XA=xa
-RUN touch /opt/xb
+RUN mkdir -p /opt/xb
 ENV XB=xb
-RUN touch /opt/xc
+RUN mkdir -p /opt/xc
 ENV XC=xc
-RUN touch /opt/xd
+RUN mkdir -p /opt/xd
 ENV XD=xd
-RUN touch /opt/xe
+RUN mkdir -p /opt/xe
 ENV XE=xe
-RUN touch /opt/xf
+RUN mkdir -p /opt/xf
 ENV XF=xf
-RUN touch /opt/xg
+RUN mkdir -p /opt/xg
 ENV XG=xg
-RUN touch /opt/xh
+RUN mkdir -p /opt/xh
 ENV XH=xh
-RUN touch /opt/xi
+RUN mkdir -p /opt/xi
 ENV XI=xi
-RUN touch /opt/xj
+RUN mkdir -p /opt/xj
 ENV XJ=xj
-RUN touch /opt/xk
+RUN mkdir -p /opt/xk
 ENV XK=xk
-RUN touch /opt/xl
+RUN mkdir -p /opt/xl
 ENV XL=xl
-RUN touch /opt/xm
+RUN mkdir -p /opt/xm
 ENV XM=xm
-RUN touch /opt/xn
+RUN mkdir -p /opt/xn
 ENV XN=xn
-RUN touch /opt/xo
+RUN mkdir -p /opt/xo
 ENV XO=xo
-RUN touch /opt/xp
+RUN mkdir -p /opt/xp
 ENV XP=xp
-RUN touch /opt/xq
+RUN mkdir -p /opt/xq
 ENV XQ=xq
-RUN touch /opt/xr
+RUN mkdir -p /opt/xr
 ENV XR=xr
-RUN touch /opt/xs
+RUN mkdir -p /opt/xs
 ENV XS=xs
-RUN touch /opt/xt
+RUN mkdir -p /opt/xt
 ENV XT=xt
-RUN touch /opt/xu
+RUN mkdir -p /opt/xu
 ENV XU=xu
-RUN touch /opt/xv
+RUN mkdir -p /opt/xv
 ENV XV=xv
-RUN touch /opt/xw
+RUN mkdir -p /opt/xw
 ENV XW=xw
-RUN touch /opt/xx
+RUN mkdir -p /opt/xx
 ENV XX=xx
-RUN touch /opt/xy
+RUN mkdir -p /opt/xy
 ENV XY=xy
-RUN touch /opt/xz
+RUN mkdir -p /opt/xz
 ENV XZ=xz
-RUN touch /opt/ya
+RUN mkdir -p /opt/ya
 ENV YA=ya
-RUN touch /opt/yb
+RUN mkdir -p /opt/yb
 ENV YB=yb
-RUN touch /opt/yc
+RUN mkdir -p /opt/yc
 ENV YC=yc
-RUN touch /opt/yd
+RUN mkdir -p /opt/yd
 ENV YD=yd
-RUN touch /opt/ye
+RUN mkdir -p /opt/ye
 ENV YE=ye
-RUN touch /opt/yf
+RUN mkdir -p /opt/yf
 ENV YF=yf
-RUN touch /opt/yg
+RUN mkdir -p /opt/yg
 ENV YG=yg
-RUN touch /opt/yh
+RUN mkdir -p /opt/yh
 ENV YH=yh
-RUN touch /opt/yi
+RUN mkdir -p /opt/yi
 ENV YI=yi
-RUN touch /opt/yj
+RUN mkdir -p /opt/yj
 ENV YJ=yj
-RUN touch /opt/yk
+RUN mkdir -p /opt/yk
 ENV YK=yk
-RUN touch /opt/yl
+RUN mkdir -p /opt/yl
 ENV YL=yl
-RUN touch /opt/ym
+RUN mkdir -p /opt/ym
 ENV YM=ym
-RUN touch /opt/yn
+RUN mkdir -p /opt/yn
 ENV YN=yn
-RUN touch /opt/yo
+RUN mkdir -p /opt/yo
 ENV YO=yo
-RUN touch /opt/yp
+RUN mkdir -p /opt/yp
 ENV YP=yp
-RUN touch /opt/yq
+RUN mkdir -p /opt/yq
 ENV YQ=yq
-RUN touch /opt/yr
+RUN mkdir -p /opt/yr
 ENV YR=yr
-RUN touch /opt/ys
+RUN mkdir -p /opt/ys
 ENV YS=ys
-RUN touch /opt/yt
+RUN mkdir -p /opt/yt
 ENV YT=yt
-RUN touch /opt/yu
+RUN mkdir -p /opt/yu
 ENV YU=yu
-RUN touch /opt/yv
+RUN mkdir -p /opt/yv
 ENV YV=yv
-RUN touch /opt/yw
+RUN mkdir -p /opt/yw
 ENV YW=yw
-RUN touch /opt/yx
+RUN mkdir -p /opt/yx
 ENV YX=yx
-RUN touch /opt/yy
+RUN mkdir -p /opt/yy
 ENV YY=yy
-RUN touch /opt/yz
+RUN mkdir -p /opt/yz
 ENV YZ=yz
-RUN touch /opt/za
+RUN mkdir -p /opt/za
 ENV ZA=za
-RUN touch /opt/zb
+RUN mkdir -p /opt/zb
 ENV ZB=zb
-RUN touch /opt/zc
+RUN mkdir -p /opt/zc
 ENV ZC=zc
-RUN touch /opt/zd
+RUN mkdir -p /opt/zd
 ENV ZD=zd
-RUN touch /opt/ze
+RUN mkdir -p /opt/ze
 ENV ZE=ze
-RUN touch /opt/zf
+RUN mkdir -p /opt/zf
 ENV ZF=zf
-RUN touch /opt/zg
+RUN mkdir -p /opt/zg
 ENV ZG=zg
-RUN touch /opt/zh
+RUN mkdir -p /opt/zh
 ENV ZH=zh
-RUN touch /opt/zi
+RUN mkdir -p /opt/zi
 ENV ZI=zi
-RUN touch /opt/zj
+RUN mkdir -p /opt/zj
 ENV ZJ=zj
-RUN touch /opt/zk
+RUN mkdir -p /opt/zk
 ENV ZK=zk
-RUN touch /opt/zl
+RUN mkdir -p /opt/zl
 ENV ZL=zl
-RUN touch /opt/zm
+RUN mkdir -p /opt/zm
 ENV ZM=zm
-RUN touch /opt/zn
+RUN mkdir -p /opt/zn
 ENV ZN=zn
-RUN touch /opt/zo
+RUN mkdir -p /opt/zo
 ENV ZO=zo
-RUN touch /opt/zp
+RUN mkdir -p /opt/zp
 ENV ZP=zp
-RUN touch /opt/zq
+RUN mkdir -p /opt/zq
 ENV ZQ=zq
-RUN touch /opt/zr
+RUN mkdir -p /opt/zr
 ENV ZR=zr
-RUN touch /opt/zs
+RUN mkdir -p /opt/zs
 ENV ZS=zs
-RUN touch /opt/zt
+RUN mkdir -p /opt/zt
 ENV ZT=zt
-RUN touch /opt/zu
+RUN mkdir -p /opt/zu
 ENV ZU=zu
-RUN touch /opt/zv
+RUN mkdir -p /opt/zv
 ENV ZV=zv
-RUN touch /opt/zw
+RUN mkdir -p /opt/zw
 ENV ZW=zw
-RUN touch /opt/zx
+RUN mkdir -p /opt/zx
 ENV ZX=zx
-RUN touch /opt/zy
+RUN mkdir -p /opt/zy
 ENV ZY=zy
-RUN touch /opt/zz
+RUN mkdir -p /opt/zz
 ENV ZZ=zz
