@@ -2,253 +2,126 @@ FROM alpine:edge
 
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
-RUN mkdir -p /opt/aa
-ENV AA=aa
-RUN mkdir -p /opt/ab
-ENV AB=ab
-RUN mkdir -p /opt/ac
-ENV AC=ac
-RUN mkdir -p /opt/ad
-ENV AD=ad
-RUN mkdir -p /opt/ae
-ENV AE=ae
-RUN mkdir -p /opt/af
-ENV AF=af
-RUN mkdir -p /opt/ag
-ENV AG=ag
-RUN mkdir -p /opt/ah
-ENV AH=ah
-RUN mkdir -p /opt/ai
-ENV AI=ai
-RUN mkdir -p /opt/aj
-ENV AJ=aj
-RUN mkdir -p /opt/ak
-ENV AK=ak
-RUN mkdir -p /opt/al
-ENV AL=al
-RUN mkdir -p /opt/am
-ENV AM=am
-RUN mkdir -p /opt/an
-ENV AN=an
-RUN mkdir -p /opt/ao
-ENV AO=ao
-RUN mkdir -p /opt/ap
-ENV AP=ap
-RUN mkdir -p /opt/aq
-ENV AQ=aq
-RUN mkdir -p /opt/ar
-ENV AR=ar
-RUN mkdir -p /opt/as
-ENV AS=as
-RUN mkdir -p /opt/at
-ENV AT=at
-RUN mkdir -p /opt/au
-ENV AU=au
-RUN mkdir -p /opt/av
-ENV AV=av
-RUN mkdir -p /opt/aw
-ENV AW=aw
-RUN mkdir -p /opt/ax
-ENV AX=ax
-RUN mkdir -p /opt/ay
-ENV AY=ay
-RUN mkdir -p /opt/az
-ENV AZ=az
-RUN mkdir -p /opt/ba
-ENV BA=ba
-RUN mkdir -p /opt/bb
-ENV BB=bb
-RUN mkdir -p /opt/bc
-ENV BC=bc
-RUN mkdir -p /opt/bd
-ENV BD=bd
-RUN mkdir -p /opt/be
-ENV BE=be
-RUN mkdir -p /opt/bf
-ENV BF=bf
-RUN mkdir -p /opt/bg
-ENV BG=bg
-RUN mkdir -p /opt/bh
-ENV BH=bh
-RUN mkdir -p /opt/bi
-ENV BI=bi
-RUN mkdir -p /opt/bj
-ENV BJ=bj
-RUN mkdir -p /opt/bk
-ENV BK=bk
-RUN mkdir -p /opt/bl
-ENV BL=bl
-RUN mkdir -p /opt/bm
-ENV BM=bm
-RUN mkdir -p /opt/bn
-ENV BN=bn
-RUN mkdir -p /opt/bo
-ENV BO=bo
-RUN mkdir -p /opt/bp
-ENV BP=bp
-RUN mkdir -p /opt/bq
-ENV BQ=bq
-RUN mkdir -p /opt/br
-ENV BR=br
-RUN mkdir -p /opt/bs
-ENV BS=bs
-RUN mkdir -p /opt/bt
-ENV BT=bt
-RUN mkdir -p /opt/bu
-ENV BU=bu
-RUN mkdir -p /opt/bv
-ENV BV=bv
-RUN mkdir -p /opt/bw
-ENV BW=bw
-RUN mkdir -p /opt/bx
-ENV BX=bx
-RUN mkdir -p /opt/by
-ENV BY=by
-RUN mkdir -p /opt/bz
-ENV BZ=bz
-RUN mkdir -p /opt/ca
-ENV CA=ca
-RUN mkdir -p /opt/cb
-ENV CB=cb
-RUN mkdir -p /opt/cc
-ENV CC=cc
-RUN mkdir -p /opt/cd
-ENV CD=cd
-RUN mkdir -p /opt/ce
-ENV CE=ce
-RUN mkdir -p /opt/cf
-ENV CF=cf
-RUN mkdir -p /opt/cg
-ENV CG=cg
-RUN mkdir -p /opt/ch
-ENV CH=ch
-RUN mkdir -p /opt/ci
-ENV CI=ci
-RUN mkdir -p /opt/cj
-ENV CJ=cj
-RUN mkdir -p /opt/ck
-ENV CK=ck
-RUN mkdir -p /opt/cl
-ENV CL=cl
-RUN mkdir -p /opt/cm
-ENV CM=cm
-RUN mkdir -p /opt/cn
-ENV CN=cn
-RUN mkdir -p /opt/co
-ENV CO=co
-RUN mkdir -p /opt/cp
-ENV CP=cp
-RUN mkdir -p /opt/cq
-ENV CQ=cq
-RUN mkdir -p /opt/cr
-ENV CR=cr
-RUN mkdir -p /opt/cs
-ENV CS=cs
-RUN mkdir -p /opt/ct
-ENV CT=ct
-RUN mkdir -p /opt/cu
-ENV CU=cu
-RUN mkdir -p /opt/cv
-ENV CV=cv
-RUN mkdir -p /opt/cw
-ENV CW=cw
-RUN mkdir -p /opt/cx
-ENV CX=cx
-RUN mkdir -p /opt/cy
-ENV CY=cy
-RUN mkdir -p /opt/cz
-ENV CZ=cz
-RUN mkdir -p /opt/da
-ENV DA=da
-RUN mkdir -p /opt/db
-ENV DB=db
-RUN mkdir -p /opt/dc
-ENV DC=dc
-RUN mkdir -p /opt/dd
-ENV DD=dd
-RUN mkdir -p /opt/de
-ENV DE=de
-RUN mkdir -p /opt/df
-ENV DF=df
-RUN mkdir -p /opt/dg
-ENV DG=dg
-RUN mkdir -p /opt/dh
-ENV DH=dh
-RUN mkdir -p /opt/di
-ENV DI=di
-RUN mkdir -p /opt/dj
-ENV DJ=dj
-RUN mkdir -p /opt/dk
-ENV DK=dk
-RUN mkdir -p /opt/dl
-ENV DL=dl
-RUN mkdir -p /opt/dm
-ENV DM=dm
-RUN mkdir -p /opt/dn
-ENV DN=dn
-RUN mkdir -p /opt/do
-ENV DO=do
-RUN mkdir -p /opt/dp
-ENV DP=dp
-RUN mkdir -p /opt/dq
-ENV DQ=dq
-RUN mkdir -p /opt/dr
-ENV DR=dr
-RUN mkdir -p /opt/ds
-ENV DS=ds
-RUN mkdir -p /opt/dt
-ENV DT=dt
-RUN mkdir -p /opt/du
-ENV DU=du
-RUN mkdir -p /opt/dv
-ENV DV=dv
-RUN mkdir -p /opt/dw
-ENV DW=dw
-RUN mkdir -p /opt/dx
-ENV DX=dx
-RUN mkdir -p /opt/dy
-ENV DY=dy
-RUN mkdir -p /opt/dz
-ENV DZ=dz
-RUN mkdir -p /opt/ea
-ENV EA=ea
-RUN mkdir -p /opt/eb
-ENV EB=eb
-RUN mkdir -p /opt/ec
-ENV EC=ec
-RUN mkdir -p /opt/ed
-ENV ED=ed
-RUN mkdir -p /opt/ee
-ENV EE=ee
-RUN mkdir -p /opt/ef
-ENV EF=ef
-RUN mkdir -p /opt/eg
-ENV EG=eg
-RUN mkdir -p /opt/eh
-ENV EH=eh
-RUN mkdir -p /opt/ei
-ENV EI=ei
-RUN mkdir -p /opt/ej
-ENV EJ=ej
-RUN mkdir -p /opt/ek
-ENV EK=ek
-RUN mkdir -p /opt/el
-ENV EL=el
-RUN mkdir -p /opt/em
-ENV EM=em
-RUN mkdir -p /opt/en
-ENV EN=en
-RUN mkdir -p /opt/eo
-ENV EO=eo
-RUN mkdir -p /opt/ep
-ENV EP=ep
-RUN mkdir -p /opt/eq
-ENV EQ=eq
-RUN mkdir -p /opt/er
-ENV ER=er
-RUN mkdir -p /opt/es
-ENV ES=es
-RUN mkdir -p /opt/et
-ENV ET=et
-RUN mkdir -p /opt/eu
-ENV EU=eu
+RUN mkdir -p /opt/0
+RUN mkdir -p /opt/1
+RUN mkdir -p /opt/2
+RUN mkdir -p /opt/3
+RUN mkdir -p /opt/4
+RUN mkdir -p /opt/5
+RUN mkdir -p /opt/6
+RUN mkdir -p /opt/7
+RUN mkdir -p /opt/8
+RUN mkdir -p /opt/9
+RUN mkdir -p /opt/10
+RUN mkdir -p /opt/11
+RUN mkdir -p /opt/12
+RUN mkdir -p /opt/13
+RUN mkdir -p /opt/14
+RUN mkdir -p /opt/15
+RUN mkdir -p /opt/16
+RUN mkdir -p /opt/17
+RUN mkdir -p /opt/18
+RUN mkdir -p /opt/19
+RUN mkdir -p /opt/20
+RUN mkdir -p /opt/21
+RUN mkdir -p /opt/22
+RUN mkdir -p /opt/23
+RUN mkdir -p /opt/24
+RUN mkdir -p /opt/25
+RUN mkdir -p /opt/26
+RUN mkdir -p /opt/27
+RUN mkdir -p /opt/28
+RUN mkdir -p /opt/29
+RUN mkdir -p /opt/30
+RUN mkdir -p /opt/31
+RUN mkdir -p /opt/32
+RUN mkdir -p /opt/33
+RUN mkdir -p /opt/34
+RUN mkdir -p /opt/35
+RUN mkdir -p /opt/36
+RUN mkdir -p /opt/37
+RUN mkdir -p /opt/38
+RUN mkdir -p /opt/39
+RUN mkdir -p /opt/40
+RUN mkdir -p /opt/41
+RUN mkdir -p /opt/42
+RUN mkdir -p /opt/43
+RUN mkdir -p /opt/44
+RUN mkdir -p /opt/45
+RUN mkdir -p /opt/46
+RUN mkdir -p /opt/47
+RUN mkdir -p /opt/48
+RUN mkdir -p /opt/49
+RUN mkdir -p /opt/50
+RUN mkdir -p /opt/51
+RUN mkdir -p /opt/52
+RUN mkdir -p /opt/53
+RUN mkdir -p /opt/54
+RUN mkdir -p /opt/55
+RUN mkdir -p /opt/56
+RUN mkdir -p /opt/57
+RUN mkdir -p /opt/58
+RUN mkdir -p /opt/59
+RUN mkdir -p /opt/60
+RUN mkdir -p /opt/61
+RUN mkdir -p /opt/62
+RUN mkdir -p /opt/63
+RUN mkdir -p /opt/64
+RUN mkdir -p /opt/65
+RUN mkdir -p /opt/66
+RUN mkdir -p /opt/67
+RUN mkdir -p /opt/68
+RUN mkdir -p /opt/69
+RUN mkdir -p /opt/70
+RUN mkdir -p /opt/71
+RUN mkdir -p /opt/72
+RUN mkdir -p /opt/73
+RUN mkdir -p /opt/74
+RUN mkdir -p /opt/75
+RUN mkdir -p /opt/76
+RUN mkdir -p /opt/77
+RUN mkdir -p /opt/78
+RUN mkdir -p /opt/79
+RUN mkdir -p /opt/80
+RUN mkdir -p /opt/81
+RUN mkdir -p /opt/82
+RUN mkdir -p /opt/83
+RUN mkdir -p /opt/84
+RUN mkdir -p /opt/85
+RUN mkdir -p /opt/86
+RUN mkdir -p /opt/87
+RUN mkdir -p /opt/88
+RUN mkdir -p /opt/89
+RUN mkdir -p /opt/90
+RUN mkdir -p /opt/91
+RUN mkdir -p /opt/92
+RUN mkdir -p /opt/93
+RUN mkdir -p /opt/94
+RUN mkdir -p /opt/95
+RUN mkdir -p /opt/96
+RUN mkdir -p /opt/97
+RUN mkdir -p /opt/98
+RUN mkdir -p /opt/99
+RUN mkdir -p /opt/100
+RUN mkdir -p /opt/101
+RUN mkdir -p /opt/102
+RUN mkdir -p /opt/103
+RUN mkdir -p /opt/104
+RUN mkdir -p /opt/105
+RUN mkdir -p /opt/106
+RUN mkdir -p /opt/107
+RUN mkdir -p /opt/108
+RUN mkdir -p /opt/109
+RUN mkdir -p /opt/110
+RUN mkdir -p /opt/111
+RUN mkdir -p /opt/112
+RUN mkdir -p /opt/113
+RUN mkdir -p /opt/114
+RUN mkdir -p /opt/115
+RUN mkdir -p /opt/116
+RUN mkdir -p /opt/117
+RUN mkdir -p /opt/118
+RUN mkdir -p /opt/119
+RUN mkdir -p /opt/120
+RUN mkdir -p /opt/121
+RUN mkdir -p /opt/122
