@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-MAINTAINER ckeyer <docker@ckeyer.com>
+MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
 RUN mkdir -p /opt/aa
 ENV AA=aa
