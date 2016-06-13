@@ -14,7 +14,7 @@ func main() {
 
 	fmt.Fprintln(f, "FROM alpine:edge")
 	fmt.Fprintln(f)
-	fmt.Fprintln(f, "MAINTAINER ckeyer <docker@ckeyer.com>")
+	fmt.Fprintln(f, "MAINTAINER Chuanjian Wang <me@ckeyer.com>")
 	fmt.Fprintln(f)
 	for I := 'a'; I <= 'z'; I++ {
 		for i, j := 'a', 'A'-'a'; i <= 'z'; i++ {
