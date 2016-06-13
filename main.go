@@ -16,8 +16,11 @@ func main() {
 	fmt.Fprintln(f)
 	fmt.Fprintln(f, "MAINTAINER Chuanjian Wang <me@ckeyer.com>")
 	fmt.Fprintln(f)
-	for I := 'a'; I <= 'z'; I++ {
+	for I, J := 'a', 0; I <= 'z'; I++ {
 		for i, j := 'a', 'A'-'a'; i <= 'z'; i++ {
+			if J++; J > 125 {
+				return
+			}
 			fmt.Fprintf(f, "RUN mkdir -p /opt/%s%s\n", string(I), string(i))
 			fmt.Fprintf(f, "ENV %s%s=%s%s\n", string(I+j), string(i+j), string(I), string(i))
 		}
