@@ -1,7 +1,7 @@
-FROM alpine:edge
+FROM ckeyer/dev
 
 MAINTAINER ckeyer <docker@ckeyer.com>
 
-RUN apk add --update git make subversion curl wget tar zip bash bash-completion flex bison gcc && \
+RUN apk add --update etcd && \
 	rm -rf /var/cache/apk/*
 
