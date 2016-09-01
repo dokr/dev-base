@@ -1,7 +1,6 @@
-FROM alpine:edge
+FROM node:
 
-MAINTAINER ckeyer <docker@ckeyer.com>
+MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
-RUN apk add --update git make subversion curl wget tar zip bash bash-completion flex bison gcc && \
-	rm -rf /var/cache/apk/*
+RUN npm install webpack
 
