@@ -36,3 +36,4 @@ RUN cd /tmp && \
 	rm -f node-v7.0.0-linux-x64/LICENSE && \
 	cp -a node-v7.0.0-linux-x64/* /usr/local && \
 	rm -rf /tmp/*
+RUN npm install -g webpack vue-cli
