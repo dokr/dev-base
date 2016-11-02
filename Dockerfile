@@ -27,3 +27,12 @@ RUN cd /tmp && \
 	ldconfig && \
 	ln -s /usr/local/lib/librocksdb.so.4.11.2 /lib64/librocksdb.so.4.11 && \
 	rm -rf /tmp/*
+
+# Install node environment.
+RUN cd /tmp && \
+	wget wget https://nodejs.org/dist/v7.0.0/node-v7.0.0-linux-x64.tar.xz && \
+	tar xvJf node-v7.0.0-linux-x64.tar.xz.xz && \
+	rm -f node-v7.0.0-linux-x64/*.md && \
+	rm -f node-v7.0.0-linux-x64/LICENSE && \
+	cp -a node-v7.0.0-linux-x64/* /usr/local && \
+	rm -rf /tmp/*
