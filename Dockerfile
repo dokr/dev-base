@@ -30,7 +30,7 @@ RUN cd /tmp && \
 
 # Install node environment.
 RUN cd /tmp && \
-	wget wget https://nodejs.org/dist/v7.0.0/node-v7.0.0-linux-x64.tar.xz && \
+	wget https://nodejs.org/dist/v7.0.0/node-v7.0.0-linux-x64.tar.xz && \
 	tar xvJf node-v7.0.0-linux-x64.tar.xz.xz && \
 	rm -f node-v7.0.0-linux-x64/*.md && \
 	rm -f node-v7.0.0-linux-x64/LICENSE && \
