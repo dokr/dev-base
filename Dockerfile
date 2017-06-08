@@ -3,7 +3,7 @@ FROM centos:7
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
 RUN yum update -y ;\
-	yum install -y make gcc gcc-c++ snappy snappy-devel zlib zlib-devel bzip2 bzip2-devel vim git unzip wget;\
+	yum install -y make autoconf automake autogen libtool gcc gcc-c++ snappy zlib bzip2 vim git unzip wget;\
 	yum clean all 
 
 ### Install Golang
@@ -20,8 +20,18 @@ RUN cd /tmp && \
 	wget https://github.com/google/protobuf/releases/download/v3.2.0/protoc-3.2.0-linux-x86_64.zip && \
 	cd /usr && \
 	unzip /tmp/protoc-3.2.0-linux-x86_64.zip && \
+	cd /tmp && \
+	git clone https://github.com/google/protobuf && \
+	cd protobuf && \
+	./autogen.sh && \
+	./configure && \
+	make && \
+	make check && \
+	make install && \
 	go get -u github.com/golang/protobuf/{proto,protoc-gen-go} && \
+	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway && \
+	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger && \
+	go get -u github.com/golang/protobuf/protoc-gen-go && \
 	go get -u github.com/ckeyer/go-bindata/... && \
-	git clone https://github.com/grpc-ecosystem/grpc-gateway -b master $GOPATH/src/github.com/grpc-ecosystem/grpc-gateway && \
 	rm -rf /tmp/* && \
 	rm -rf $GOPATH/src
