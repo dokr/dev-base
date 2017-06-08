@@ -22,5 +22,6 @@ RUN cd /tmp && \
 	unzip /tmp/protoc-3.2.0-linux-x86_64.zip && \
 	go get -u github.com/golang/protobuf/{proto,protoc-gen-go} && \
 	go get -u github.com/ckeyer/go-bindata/... && \
+	git clone https://github.com/grpc-ecosystem/grpc-gateway -b master $GOPATH/src/github.com/grpc-ecosystem/grpc-gateway && \
 	rm -rf /tmp/* && \
 	rm -rf $GOPATH/src
