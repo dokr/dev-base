@@ -17,10 +17,6 @@ RUN cd /usr/local && \
 	rm -f go1.7.linux-amd64.tar.gz
 
 RUN cd /tmp && \
-	wget https://github.com/google/protobuf/releases/download/v3.2.0/protoc-3.2.0-linux-x86_64.zip && \
-	cd /usr && \
-	unzip /tmp/protoc-3.2.0-linux-x86_64.zip && \
-	cd /tmp && \
 	git clone https://github.com/google/protobuf && \
 	cd protobuf && \
 	./autogen.sh && \
@@ -28,6 +24,12 @@ RUN cd /tmp && \
 	make && \
 	make check && \
 	make install && \
+	rm -rf /tmp/*
+
+RUN cd /tmp && \
+	wget https://github.com/google/protobuf/releases/download/v3.2.0/protoc-3.2.0-linux-x86_64.zip && \
+	cd /usr && \
+	unzip /tmp/protoc-3.2.0-linux-x86_64.zip && \
 	go get -u github.com/golang/protobuf/{proto,protoc-gen-go} && \
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway && \
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger && \
