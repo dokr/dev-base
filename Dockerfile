@@ -33,5 +33,4 @@ RUN cd /tmp && \
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger && \
 	go get -u github.com/golang/protobuf/protoc-gen-go && \
 	go get -u github.com/ckeyer/go-bindata/... && \
-	rm -rf /tmp/* && \
-	rm -rf $GOPATH/src
+	rm -rf /tmp/*
