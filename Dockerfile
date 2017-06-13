@@ -10,12 +10,12 @@ RUN yum update -y ;\
 ENV GOROOT=/usr/local/go
 ENV GOPATH=/opt/gopath
 ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
 RUN cd /usr/local && \
-	wget https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz && \
-	tar zxf go1.7.linux-amd64.tar.gz && \
-	rm -f go1.7.linux-amd64.tar.gz
+	wget https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz && \
+	tar zxf go1.8.linux-amd64.tar.gz && \
+	rm -f go1.8.linux-amd64.tar.gz
 
+# Install protobuf
 RUN cd /tmp && \
 	git clone https://github.com/google/protobuf && \
 	cd protobuf && \
@@ -30,9 +30,16 @@ RUN cd /tmp && \
 	wget https://github.com/google/protobuf/releases/download/v3.2.0/protoc-3.2.0-linux-x86_64.zip && \
 	cd /usr && \
 	unzip /tmp/protoc-3.2.0-linux-x86_64.zip && \
-	go get -u github.com/golang/protobuf/{proto,protoc-gen-go} && \
-	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway && \
-	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger && \
-	go get -u github.com/golang/protobuf/protoc-gen-go && \
-	go get -u github.com/ckeyer/go-bindata/... && \
 	rm -rf /tmp/*
+
+RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
+	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
+	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
+	go get -u github.com/ckeyer/go-bindata/... ;\
+	go get golang.org/x/crypto ;\
+	go get golang.org/x/image ;\
+	go get golang.org/x/net ;\
+	go get golang.org/x/oauth2 ;\
+	go get golang.org/x/sys ;\
+	go get golang.org/x/text ;\
+	go get golang.org/x/time ; exit 0
