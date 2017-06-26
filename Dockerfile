@@ -35,7 +35,9 @@ RUN cd /tmp && \
 RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
+	go get -u github.com/gogo/protobuf/protoc-gen-go{fast,gofast,gofaster,goslick} ;\
 	go get -u github.com/ckeyer/go-bindata/... ;\
+	go get google.golang.org/grpc ;\
 	go get golang.org/x/crypto ;\
 	go get golang.org/x/image ;\
 	go get golang.org/x/net ;\
