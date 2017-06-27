@@ -1,6 +1,6 @@
 FROM centos:7
 
-MAINTAINER Chuanjian Wang <me@ckeyer.com>
+MAINTAINER Chuanjian Wang <chuanjian@staff.sina.com.cn>
 
 RUN yum update -y ;\
 	yum install -y make autoconf automake autogen libtool gcc gcc-c++ snappy zlib bzip2 vim git unzip wget;\
@@ -44,4 +44,11 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get golang.org/x/oauth2 ;\
 	go get golang.org/x/sys ;\
 	go get golang.org/x/text ;\
-	go get golang.org/x/time ; exit 0
+	go get golang.org/x/time ;\
+	mkdir -p /opt/gopath/src/k8s.io ;\
+	cd /opt/gopath/src/k8s.io ;\
+	git clone https://github.com/kubernetes/kubernetes.git -b release-1.6 ;\
+	git clone https://github.com/kubernetes/client-go.git -b release-3.0 ;\
+	git clone https://github.com/kubernetes/apimachinery.git -b release-1.6 ;\
+	git clone https://github.com/kubernetes/apiserver.git -b release-1.6 ;\
+	exit 0
