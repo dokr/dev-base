@@ -39,9 +39,7 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get -u github.com/ckeyer/go-bindata/... ;\
 	go get google.golang.org/grpc ;\
 	go get golang.org/x/crypto ;\
-	go get golang.org/x/image ;\
 	go get golang.org/x/net ;\
-	go get golang.org/x/oauth2 ;\
 	go get golang.org/x/sys ;\
 	go get golang.org/x/text ;\
 	go get golang.org/x/time ;\
@@ -51,4 +49,5 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	git clone https://github.com/kubernetes/client-go.git -b release-3.0 ;\
 	git clone https://github.com/kubernetes/apimachinery.git -b release-1.6 ;\
 	git clone https://github.com/kubernetes/apiserver.git -b release-1.6 ;\
+	rm -rf $(find /opt/gopath/src -type d -name .git) ;\
 	exit 0
