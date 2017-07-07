@@ -44,4 +44,7 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get golang.org/x/oauth2 ;\
 	go get golang.org/x/sys ;\
 	go get golang.org/x/text ;\
-	go get golang.org/x/time ; exit 0
+	go get golang.org/x/time ;\
+	rm -rf /opt/gopath/src/github ;\
+	rm -rf $(find /opt/gopath/src -type d -name .git) ;\
+	exit 0
