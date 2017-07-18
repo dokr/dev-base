@@ -36,16 +36,18 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
 	go get -u github.com/gogo/protobuf/protoc-gen-go{fast,gofast,gofaster,goslick} ;\
-	go get -u github.com/ckeyer/go-bindata/... ;\
 	go get google.golang.org/grpc ;\
 	go get golang.org/x/crypto ;\
 	go get golang.org/x/net ;\
 	go get golang.org/x/sys ;\
 	go get golang.org/x/text ;\
 	go get golang.org/x/time ;\
+	go get github.com/Sirupsen/logrus ;\
+	go get github.com/google/gofuzz ;\
+	go get gopkg.in/mgo.v2 ;\
+	go get gopkg.in/redis.v4 ;\
 	mkdir -p /opt/gopath/src/k8s.io ;\
 	cd /opt/gopath/src/k8s.io ;\
-	git clone https://github.com/kubernetes/kubernetes.git -b release-1.6 ;\
 	git clone https://github.com/kubernetes/client-go.git -b release-3.0 ;\
 	git clone https://github.com/kubernetes/apimachinery.git -b release-1.6 ;\
 	git clone https://github.com/kubernetes/apiserver.git -b release-1.6 ;\
