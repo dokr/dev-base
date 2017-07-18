@@ -15,17 +15,6 @@ RUN cd /usr/local && \
 	tar zxf go1.8.linux-amd64.tar.gz && \
 	rm -f go1.8.linux-amd64.tar.gz
 
-# Install protobuf
-RUN cd /tmp && \
-	git clone https://github.com/google/protobuf && \
-	cd protobuf && \
-	./autogen.sh && \
-	./configure && \
-	make && \
-	make check && \
-	make install && \
-	rm -rf /tmp/*
-
 RUN cd /tmp && \
 	wget https://github.com/google/protobuf/releases/download/v3.2.0/protoc-3.2.0-linux-x86_64.zip && \
 	cd /usr && \
