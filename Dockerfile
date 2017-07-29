@@ -14,4 +14,4 @@ ADD etc/ /etc/
 EXPOSE 80
 WORKDIR /usr/share/nginx/html/
 
-CMD ["sh", "-c", "php-fpm7 && nginx -g \"daemon off;\" "]
+CMD ["sh", "-c", "php-fpm7 && sleep 3 && nginx -g \"daemon off;\" "]
