@@ -6,7 +6,7 @@ RUN apk update && apk add --update \
 	php7 \
 	php7-fpm
 
-RUN	mkdir -p /run/nginx /run/php5
+RUN	mkdir -p /run/nginx /run/php7
 
 ADD src/ /usr/share/nginx/html/
 ADD etc/ /etc/
@@ -14,4 +14,4 @@ ADD etc/ /etc/
 EXPOSE 80
 WORKDIR /usr/share/nginx/html/
 
-CMD ["sh", "-c", "php-fpm7 && sleep 3 && nginx -g \"daemon off;\" "]
+CMD ["sh", "-c", "php-fpm7 && nginx -g \"daemon off;\" "]
