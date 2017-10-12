@@ -42,7 +42,7 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get golang.org/x/sys ;\
 	go get golang.org/x/text ;\
 	go get golang.org/x/time ;\
-	go get github.com/Sirupsen/logrus ;\
+	go get github.com/sirupsen/logrus ;\
 	go get github.com/google/gofuzz ;\
 	go get gopkg.in/mgo.v2 ;\
 	go get gopkg.in/redis.v4 ;\
