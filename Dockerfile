@@ -8,4 +8,4 @@ RUN apk add --update lapack lapack-dev openblas openblas-dev libpng py3-cairo fr
 
 ENV TF_VERSION=1.3.0
 
-RUN pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-$TF_VERSION-cp27-none-linux_x86_64.whl
+RUN pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-$TF_VERSION-cp36-cp36m-linux_x86_64.whl
