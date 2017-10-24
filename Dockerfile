@@ -7,7 +7,7 @@ RUN yum update -y ;\
 	yum clean all 
 
 ### Install Golang
-ENV GOROOT=/usr/local/go
+ENV GOROOT=/root/go
 ENV GOPATH=/opt/gopath
 ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 RUN cd /usr/local && \
@@ -46,15 +46,17 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get github.com/google/gofuzz ;\
 	go get gopkg.in/mgo.v2 ;\
 	go get gopkg.in/redis.v4 ;\
-	mkdir -p /opt/gopath/src/k8s.io ;\
-	cd /opt/gopath/src/k8s.io ;\
+	mkdir -p $GOPATH/src/k8s.io ;\
+	cd $GOPATH/src/k8s.io ;\
 	git clone https://github.com/kubernetes/client-go.git -b release-3.0 ;\
 	git clone https://github.com/kubernetes/apimachinery.git -b release-1.6 ;\
 	git clone https://github.com/kubernetes/apiserver.git -b release-1.6 ;\
 	git clone https://github.com/kubernetes/kubernetes.git -b release-1.6 ;\
 	rm -rf kubernetes/vendor/k8s.io;\
-	rm -rf $(find /opt/gopath/src -type d -name .git) ;\
+	rm -rf $(find $GOPATH/src -type d -name .git) ;\
 	cp -a kubernetes/vendor client-go/vendor ;\
 	cp -a kubernetes/vendor apimachinery/vendor ;\
 	cp -a kubernetes/vendor apiserver/vendor ;\
 	exit 0
+
+WORKDIR $GOPATH/src
