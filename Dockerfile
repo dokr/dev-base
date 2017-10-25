@@ -3,17 +3,20 @@ FROM centos:7
 MAINTAINER Chuanjian Wang <chuanjian@staff.sina.com.cn>
 
 RUN yum update -y ;\
-	yum install -y make autoconf automake autogen libtool gcc gcc-c++ snappy zlib bzip2 vim git unzip wget;\
+	yum install -y make autoconf automake autogen libtool gcc gcc-c++ snappy zlib bzip2 vim git unzip wget yum-utils ;\
+	yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo ;\
+    yum-config-manager --enable docker-ce-edge ;\
+    yum install -y docker-ce kubernetes-client;\
 	yum clean all 
 
 ### Install Golang
-ENV GOROOT=/root/go
+ENV GOROOT=/usr/local/go
 ENV GOPATH=/opt/gopath
 ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 RUN cd /usr/local && \
-	wget https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz && \
-	tar zxf go1.9.linux-amd64.tar.gz && \
-	rm -f go1.9.linux-amd64.tar.gz
+	wget https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz && \
+	tar zxf go1.8.linux-amd64.tar.gz && \
+	rm -f go1.8.linux-amd64.tar.gz
 
 # Install protobuf
 RUN cd /tmp && \
@@ -52,11 +55,12 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	git clone https://github.com/kubernetes/apimachinery.git -b release-1.6 ;\
 	git clone https://github.com/kubernetes/apiserver.git -b release-1.6 ;\
 	git clone https://github.com/kubernetes/kubernetes.git -b release-1.6 ;\
-	rm -rf kubernetes/vendor/k8s.io;\
-	rm -rf $(find $GOPATH/src -type d -name .git) ;\
+	rm -rf kubernetes/vendor/k8s.io ;\
+	rm -rf $(find $GOPATH/src/k8s.io -type d |grep "github.com/golang/glog") ;\
 	cp -a kubernetes/vendor client-go/vendor ;\
 	cp -a kubernetes/vendor apimachinery/vendor ;\
 	cp -a kubernetes/vendor apiserver/vendor ;\
+	rm -rf $(find $GOPATH/src -type d -name .git) ;\
 	exit 0
 
-WORKDIR $GOPATH/src
+ENTRYPOINT ["sh", "-c", "dockerd > /dev/zero & bash"]
