@@ -56,7 +56,7 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	git clone https://github.com/kubernetes/apiserver.git -b release-1.6 ;\
 	git clone https://github.com/kubernetes/kubernetes.git -b release-1.6 ;\
 	rm -rf kubernetes/vendor/k8s.io ;\
-	rm -rf $(find $GOPATH/src/k8s.io -type d |grep "github.com/golang/glog") ;\
+	rm -rf $(find . -type d |grep "github.com/golang/glog") ;\
 	cp -a kubernetes/vendor client-go/vendor ;\
 	cp -a kubernetes/vendor apimachinery/vendor ;\
 	cp -a kubernetes/vendor apiserver/vendor ;\
