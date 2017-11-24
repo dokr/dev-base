@@ -13,16 +13,11 @@ RUN apt-get update -y ;\
 	  libevent-dev \
 	  bsdmainutils \
 	  python3 \
-	  libboost-system-dev \
-	  libboost-filesystem-dev \
-	  libboost-chrono-dev \
-	  libboost-program-options-dev \
-	  libboost-test-dev \
-	  libboost-thread-dev \
 	  libboost-all-dev \
 	  libminiupnpc-dev \
 	  libzmq3-dev \
-	  software-properties-common ;\
-	add-apt-repository -y ppa:bitcoin/bitcoin ;\
+	  software-properties-common ;
+
+RUN	add-apt-repository -y ppa:bitcoin/bitcoin ;\
 	apt-get update -y ;\
 	apt-get install -y libdb4.8-dev libdb4.8++-dev ;
