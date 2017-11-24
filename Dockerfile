@@ -25,4 +25,4 @@ RUN apt-get update -y ;\
 	  software-properties-common ;\
 	add-apt-repository -y ppa:bitcoin/bitcoin ;\
 	apt-get update -y ;\
-	apt-get install libdb4.8-dev libdb4.8++-dev ;
+	apt-get install -y libdb4.8-dev libdb4.8++-dev ;
