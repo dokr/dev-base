@@ -1,39 +1,34 @@
-FROM centos:7
+FROM alpine:edge
 
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
-RUN yum update -y ;\
-	yum install -y make gcc gcc-c++ snappy snappy-devel zlib zlib-devel bzip2 bzip2-devel vim git unzip wget;\
-	yum clean all 
-
-### Install Golang
-ENV GOROOT=/usr/local/go
-ENV GOPATH=/opt/gopath
-ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
-RUN cd /usr/local && \
-	wget https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz && \
-	tar zxf go1.7.linux-amd64.tar.gz && \
-	rm -f go1.7.linux-amd64.tar.gz
-
-### Install RocksDB
-RUN cd /tmp && \
-	wget https://github.com/facebook/rocksdb/archive/v4.11.2.tar.gz && \
-	tar zxf v4.11.2.tar.gz && \
-	rm -f v4.11.2.tar.gz && \
-	cd rocksdb-4.11.2 && \
-	PORTABLE=1 make shared_lib && \
-	INSTALL_PATH=/usr/local make install-shared && \
-	ldconfig && \
-	ln -s /usr/local/lib/librocksdb.so.4.11.2 /lib64/librocksdb.so.4.11 && \
+RUN apk add --update make \
+	 bash \
+	 wget \
+	 autoconf \
+	 automake \
+	 g++ \
+	 gcc \
+	 libgcc \
+	 libstdc++ \
+	 libtool \
+	 libressl2.5-libcrypto \
+	 openssl-dev \
+	 libevent-dev \
+	 boost-dev \
+	 miniupnpc-dev \
+	 protobuf-dev \
+	 libqrencode-dev &&\
+	apk add --update --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/testing libupnp-dev &&\
+	cd /tmp ;\
+	wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz ;\
+	tar -xzf db-4.8.30.NC.tar.gz ;\
+	cd db-4.8.30.NC/build_unix ;\
+	../dist/configure --enable-cxx ;\
+	make ;\
+	make install ;\
+	mv /usr/local/BerkeleyDB.4.8/lib/* /usr/lib/ ;\
+	mv /usr/local/BerkeleyDB.4.8/bin/* /usr/bin/ ;\
+	mv /usr/local/BerkeleyDB.4.8/include/* /usr/include/ ;\
+	rm -rf /usr/local/BerkeleyDB.4.8 ;\
 	rm -rf /tmp/*
-
-# Install node environment.
-RUN cd /tmp && \
-	wget https://nodejs.org/dist/v7.0.0/node-v7.0.0-linux-x64.tar.xz && \
-	tar xvJf node-v7.0.0-linux-x64.tar.xz && \
-	rm -f node-v7.0.0-linux-x64/*.md && \
-	rm -f node-v7.0.0-linux-x64/LICENSE && \
-	cp -a node-v7.0.0-linux-x64/* /usr/local && \
-	rm -rf /tmp/*
-RUN npm install -g webpack vue-cli
