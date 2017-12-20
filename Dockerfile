@@ -11,9 +11,9 @@ ENV GOROOT=/usr/local/go
 ENV GOPATH=/opt/gopath
 ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 RUN cd /usr/local && \
-	wget https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz && \
-	tar zxf go1.9.linux-amd64.tar.gz && \
-	rm -f go1.9.linux-amd64.tar.gz
+	wget https://storage.googleapis.com/golang/go1.9.2.linux-amd64.tar.gz && \
+	tar zxf go1.9.2.linux-amd64.tar.gz && \
+	rm -f go1.9.2.linux-amd64.tar.gz
 
 # Install protobuf
 RUN cd /tmp && \
