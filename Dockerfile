@@ -9,15 +9,6 @@ RUN yum update -y ;\
     yum install -y docker-ce kubernetes-client;\
 	yum clean all 
 
-### Install Golang
-ENV GOROOT=/usr/local/go
-ENV GOPATH=/opt/gopath
-ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-RUN cd /usr/local && \
-	wget https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz && \
-	tar zxf go1.8.linux-amd64.tar.gz && \
-	rm -f go1.8.linux-amd64.tar.gz
-
 # Install protobuf
 RUN cd /tmp && \
 	git clone https://github.com/google/protobuf && \
@@ -35,6 +26,15 @@ RUN cd /tmp && \
 	unzip /tmp/protoc-3.2.0-linux-x86_64.zip && \
 	rm -rf /tmp/*
 
+### Install Golang
+ENV GOROOT=/usr/local/go
+ENV GOPATH=/opt/gopath
+ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+RUN cd /usr/local && \
+	wget https://storage.googleapis.com/golang/go1.9.2.linux-amd64.tar.gz && \
+	tar zxf go1.9.2.linux-amd64.tar.gz && \
+	rm -f go1.9.2.linux-amd64.tar.gz
+
 RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
@@ -51,16 +51,14 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get gopkg.in/redis.v4 ;\
 	mkdir -p $GOPATH/src/k8s.io ;\
 	cd $GOPATH/src/k8s.io ;\
-	git clone https://github.com/kubernetes/client-go.git -b release-6.0 ;\
-	git clone https://github.com/kubernetes/apimachinery.git -b release-1.9 ;\
-	git clone https://github.com/kubernetes/apiserver.git -b release-1.9 ;\
 	git clone https://github.com/kubernetes/kubernetes.git -b release-1.9 ;\
+	git clone https://github.com/kubernetes/utils.git -b master ;\
+	git clone https://github.com/kubernetes/kube-openapi.git -b master ;\
+	rm -rf $(find $GOPATH/src -type d -name .git) ;\
 	rm -rf kubernetes/vendor/k8s.io ;\
 	rm -rf $(find . -type d |grep "github.com/golang/glog") ;\
-	cp -a kubernetes/vendor client-go/vendor ;\
-	cp -a kubernetes/vendor apimachinery/vendor ;\
-	cp -a kubernetes/vendor apiserver/vendor ;\
-	rm -rf $(find $GOPATH/src -type d -name .git) ;\
+	for f in `ls $GOPATH/src/k8s.io/kubernetes/staging/src/k8s.io/`; do ln -s $GOPATH/src/k8s.io/kubernetes/staging/src/k8s.io/$f $f; done ;\
+	for f in `ls $GOPATH/src/k8s.io/kubernetes/staging/src/k8s.io/`; do ln -s $GOPATH/src/k8s.io/kubernetes/vendor $f/vendor; done ;\
 	exit 0
 
 ENTRYPOINT ["sh", "-c", "dockerd > /dev/zero & bash"]
