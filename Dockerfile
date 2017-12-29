@@ -52,13 +52,22 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	mkdir -p $GOPATH/src/k8s.io ;\
 	cd $GOPATH/src/k8s.io ;\
 	git clone https://github.com/kubernetes/kubernetes.git -b release-1.9 ;\
-	git clone https://github.com/kubernetes/utils.git -b master ;\
-	git clone https://github.com/kubernetes/kube-openapi.git -b master ;\
 	rm -rf $(find $GOPATH/src -type d -name .git) ;\
 	rm -rf kubernetes/vendor/k8s.io ;\
 	rm -rf $(find . -type d |grep "github.com/golang/glog") ;\
 	for f in `ls $GOPATH/src/k8s.io/kubernetes/staging/src/k8s.io/`; do ln -s $GOPATH/src/k8s.io/kubernetes/staging/src/k8s.io/$f $f; done ;\
 	for f in `ls $GOPATH/src/k8s.io/kubernetes/staging/src/k8s.io/`; do ln -s $GOPATH/src/k8s.io/kubernetes/vendor $f/vendor; done ;\
+	for f in go-openapi emicklei mailru PuerkitoBio;do mv $GOPATH/src/k8s.io/kubernetes/vendor/github.com/$f $GOPATH/src/github.com/ ;done ;\
+	rm -rf utils ;\
+	git clone https://github.com/kubernetes/utils.git -b master ;\
+	rm -rf kube-openapi ;\
+	git clone https://github.com/kubernetes/kube-openapi.git -b master ;\
+	rm -rf client-go ;\
+	git clone https://github.com/kubernetes/client-go.git -b release-6.0 ;\
+	rm -rf apimachinery ;\
+	git clone https://github.com/kubernetes/apimachinery.git -b release-1.9 ;\
+	rm -rf apiserver ;\
+	git clone https://github.com/kubernetes/apiserver.git -b release-1.9 ;\
 	exit 0
 
 ENTRYPOINT ["sh", "-c", "dockerd > /dev/zero & bash"]
