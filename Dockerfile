@@ -13,9 +13,9 @@ ENV GOROOT=/usr/local/go
 ENV GOPATH=/opt/gopath
 ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 RUN cd /usr/local && \
-	wget https://storage.googleapis.com/golang/go1.9.4.linux-amd64.tar.gz && \
-	tar zxf go1.9.4.linux-amd64.tar.gz && \
-	rm -f go1.9.4.linux-amd64.tar.gz
+	wget https://storage.googleapis.com/golang/go1.10.1.linux-amd64.tar.gz && \
+	tar zxf go1.10.1.linux-amd64.tar.gz && \
+	rm -f go1.10.1.linux-amd64.tar.gz
 
 RUN cd /tmp && \
 	wget https://github.com/google/protobuf/releases/download/v3.5.1/protoc-3.5.1-linux-x86_64.zip && \
