@@ -3,31 +3,19 @@ FROM centos:7
 MAINTAINER Chuanjian Wang <chuanjian@staff.sina.com.cn>
 
 RUN yum update -y ;\
-	yum install -y make autoconf automake autogen libtool gcc gcc-c++ snappy zlib bzip2 vim git unzip wget yum-utils ;\
-	yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo ;\
-    yum-config-manager --enable docker-ce-edge ;\
-    yum install -y docker-ce kubernetes-client;\
+	yum install -y make gcc vim git unzip wget ;\
 	yum clean all 
 
 ### Install Golang
 ENV GOROOT=/usr/local/go
-ENV GOPATH=/opt/gopath
+ENV GOPATH=/go
 ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-RUN cd /usr/local && \
-	wget https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz && \
-	tar zxf go1.8.linux-amd64.tar.gz && \
-	rm -f go1.8.linux-amd64.tar.gz
+ENV GOCACHE=/go-cache
 
-# Install protobuf
-RUN cd /tmp && \
-	git clone https://github.com/google/protobuf && \
-	cd protobuf && \
-	./autogen.sh && \
-	./configure && \
-	make && \
-	make check && \
-	make install && \
-	rm -rf /tmp/*
+RUN cd /usr/local && \
+	wget https://storage.googleapis.com/golang/go1.10.1.linux-amd64.tar.gz && \
+	tar zxf go1.10.1.linux-amd64.tar.gz && \
+	rm -f go1.10.1.linux-amd64.tar.gz
 
 RUN cd /tmp && \
 	wget https://github.com/google/protobuf/releases/download/v3.2.0/protoc-3.2.0-linux-x86_64.zip && \
@@ -62,5 +50,3 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	cp -a kubernetes/vendor apiserver/vendor ;\
 	rm -rf $(find $GOPATH/src -type d -name .git) ;\
 	exit 0
-
-ENTRYPOINT ["sh", "-c", "dockerd > /dev/zero & bash"]
