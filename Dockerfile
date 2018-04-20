@@ -1,13 +1,10 @@
 FROM centos:7
 
-MAINTAINER Chuanjian Wang <chuanjian@staff.sina.com.cn>
+MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
 ENV TZ=Asia/Shanghai
 RUN yum update -y ;\
-	yum install -y make gcc git unzip wget yum-utils ;\
-	yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo ;\
-    yum-config-manager --enable docker-ce-edge ;\
-    yum install -y docker-ce kubernetes-client;\
+	yum install -y make gcc git unzip wget ;\
 	yum clean all 
 
 ### Install Golang
@@ -15,6 +12,7 @@ ENV GOROOT=/usr/local/go
 ENV GOPATH=/go
 ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ENV GOCACHE=/go-cache
+
 RUN cd /usr/local && \
 	wget https://storage.googleapis.com/golang/go1.10.1.linux-amd64.tar.gz && \
 	tar zxf go1.10.1.linux-amd64.tar.gz && \
@@ -60,5 +58,3 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	cp -a kubernetes/vendor apiserver/vendor ;\
 	rm -rf $(find $GOPATH/src -type d -name .git) ;\
 	exit 0
-
-ENTRYPOINT ["sh", "-c", "dockerd > /dev/zero & bash"]
