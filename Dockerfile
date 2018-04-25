@@ -41,5 +41,4 @@ RUN mkdir -p $GOPATH/src/k8s.io ;\
 	cp -a kubernetes/vendor client-go/vendor ;\
 	cp -a kubernetes/vendor apimachinery/vendor ;\
 	cp -a kubernetes/vendor apiserver/vendor ;\
-	rm -rf $(find $GOPATH/src -type d -name .git) ;\
-	exit 0
+	rm -rf $(find $GOPATH/src -type d -name .git)
