@@ -1,8 +1,6 @@
-FROM ckeyer/go:1.10
+FROM ckeyer/dev:go
 
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
-
-RUN apk add --update unzip
 
 RUN cd /tmp && \
 	wget https://github.com/google/protobuf/releases/download/v3.5.1/protoc-3.5.1-linux-x86_64.zip && \
@@ -12,12 +10,6 @@ RUN cd /tmp && \
 
 RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	git clone https://github.com/grpc/grpc-go.git -b v1.10.x $GOPATH/src/google.golang.org/grpc ;\
-	go get -d golang.org/x/crypto ;\
-	go get -d golang.org/x/net ;\
-	go get -d golang.org/x/oauth2 ;\
-	go get -d golang.org/x/sys ;\
-	go get -d golang.org/x/text ;\
-	go get -d golang.org/x/time ;\
 	go get -d github.com/sirupsen/logrus ;\
 	go get -d github.com/google/gofuzz ;\
 	go get -d gopkg.in/mgo.v2 ;\
