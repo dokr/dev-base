@@ -1,4 +1,4 @@
-FROM ckeyer/dev:go
+FROM ckeyer/go:1.10
 
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
@@ -12,6 +12,13 @@ RUN cd /tmp && \
 
 RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	git clone https://github.com/grpc/grpc-go.git -b v1.10.x $GOPATH/src/google.golang.org/grpc ;\
+	go get golang.org/x/crypto ;\
+	go get golang.org/x/image ;\
+	go get golang.org/x/net ;\
+	go get golang.org/x/oauth2 ;\
+	go get golang.org/x/sys ;\
+	go get golang.org/x/text ;\
+	go get golang.org/x/time ;\
     go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
