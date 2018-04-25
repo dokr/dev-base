@@ -12,23 +12,25 @@ RUN cd /tmp && \
 
 RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	git clone https://github.com/grpc/grpc-go.git -b v1.10.x $GOPATH/src/google.golang.org/grpc ;\
-	go get golang.org/x/crypto ;\
-	go get golang.org/x/image ;\
-	go get golang.org/x/net ;\
-	go get golang.org/x/oauth2 ;\
-	go get golang.org/x/sys ;\
-	go get golang.org/x/text ;\
-	go get golang.org/x/time ;\
-    go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
-	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
-	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
-	go get -u github.com/gogo/protobuf/protoc-gen-go{fast,gofast,gofaster,goslick} ;\
-	go get github.com/sirupsen/logrus ;\
-	go get github.com/google/gofuzz ;\
-	go get gopkg.in/mgo.v2 ;\
-	go get gopkg.in/redis.v4 ;\
-	go get github.com/emicklei/go-restful ;\
-	go get github.com/go-openapi/spec ;\
+	go get -d golang.org/x/crypto ;\
+	go get -d golang.org/x/image ;\
+	go get -d golang.org/x/net ;\
+	go get -d golang.org/x/oauth2 ;\
+	go get -d golang.org/x/sys ;\
+	go get -d golang.org/x/text ;\
+	go get -d golang.org/x/time ;\
+	go get -d github.com/sirupsen/logrus ;\
+	go get -d github.com/google/gofuzz ;\
+	go get -d gopkg.in/mgo.v2 ;\
+	go get -d gopkg.in/redis.v4 ;\
+	go get -d github.com/emicklei/go-restful ;\
+	go get -d github.com/go-openapi/spec ;\
+	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
+	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
+	go get -d github.com/golang/protobuf ;\
+	go get -d github.com/gogo/protobuf ;\
+	go install github.com/golang/protobuf/{proto,protoc-gen-go} ;\
+	go install github.com/gogo/protobuf/protoc-gen-go{fast,gofast,gofaster,goslick} ;\
 	rm -rf $(find $GOPATH/src -type d -name .git)
 
 # Install K8s Packages.
