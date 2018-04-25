@@ -2,6 +2,7 @@ FROM alpine:edge
 
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
+ENV TZ=Asia/Shanghai
 RUN apk add --update wget git make bash bash-completion gcc
 
 ### Install Golang
