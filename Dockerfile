@@ -28,7 +28,6 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
 	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
 	go get -u github.com/gogo/protobuf/protoc-gen-go{fast,gofast,gofaster,goslick} ;\
-	go get google.golang.org/grpc ;\
 	go get golang.org/x/crypto ;\
 	go get golang.org/x/net ;\
 	go get golang.org/x/sys ;\
@@ -40,6 +39,8 @@ RUN go get -u github.com/golang/protobuf/{proto,protoc-gen-go,protoc-gen-go} ;\
 	go get gopkg.in/redis.v4 ;\
 	go get github.com/emicklei/go-restful ;\
 	go get github.com/go-openapi/spec ;\
+	mkdir -p $GOPATH/src/google.golang.org ;\
+	git clone https://github.com/grpc/grpc-go.git -b v1.10.x $GOPATH/src/google.golang.org/grpc ;\
 	mkdir -p $GOPATH/src/k8s.io ;\
 	cd $GOPATH/src/k8s.io ;\
 	git clone https://github.com/kubernetes/client-go.git -b release-6.0 ;\
