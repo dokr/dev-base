@@ -1,9 +1,10 @@
-FROM alpine:edge
+FROM centos:7
 
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
 ENV TZ=Asia/Shanghai
-RUN apk add --update wget git make bash bash-completion gcc
+RUN yum update -y ;\
+	yum install wget git make bash-completion gcc unzip;
 
 ### Install Golang
 ENV GOROOT=/usr/local/go
