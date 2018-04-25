@@ -4,7 +4,7 @@ MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
 ENV TZ=Asia/Shanghai
 RUN yum update -y ;\
-	yum install wget git make bash-completion gcc unzip;
+	yum install -y wget git make bash-completion gcc unzip;
 
 ### Install Golang
 ENV GOROOT=/usr/local/go
