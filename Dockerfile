@@ -6,4 +6,4 @@ RUN apk update && \
 	apk add --update ca-certificates bash nodejs nodejs-npm git make && \
 	npm update && npm install -g vue-cli 
 
-WORKDIR /opt 
+WORKDIR /opt
