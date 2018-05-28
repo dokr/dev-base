@@ -1,3 +1,6 @@
+# TO ckeyer/dev:k8s19
+# TO registry.cn-beijing.aliyuncs.com/wa/dev:k8s19 AS building
+
 FROM ckeyer/dev:go
 
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
@@ -18,6 +21,7 @@ RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	go get -d github.com/go-openapi/spec ;\
 	go get -d github.com/golang/protobuf ;\
 	go get -d github.com/gogo/protobuf ;\
+	go get github.com/coreos/go-oidc ;\
 	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
 	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
 	go get github.com/golang/protobuf/{proto,protoc-gen-go} ;\
