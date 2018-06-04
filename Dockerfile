@@ -27,13 +27,13 @@ RUN mkdir -p $GOPATH/src/google.golang.org ;\
 # Install K8s Packages.
 RUN mkdir -p $GOPATH/src/k8s.io ;\
 	cd $GOPATH/src/k8s.io ;\
-	git clone https://github.com/kubernetes/client-go.git -b release-6.0 ;\
-	git clone https://github.com/kubernetes/apimachinery.git -b release-1.9 ;\
-	git clone https://github.com/kubernetes/apiextensions-apiserver.git -b release-1.9 ;\
+	git clone https://github.com/kubernetes/client-go.git -b release-7.0 ;\
+	git clone https://github.com/kubernetes/apimachinery.git -b release-1.10 ;\
+	git clone https://github.com/kubernetes/apiextensions-apiserver.git -b release-1.10 ;\
 	git clone https://github.com/kubernetes/kube-openapi.git -b master ;\
-	git clone https://github.com/kubernetes/apiserver.git -b release-1.9 ;\
-	git clone https://github.com/kubernetes/kubernetes.git -b release-1.9 ;\
-	git clone https://github.com/kubernetes/api.git -b release-1.9 ;\
+	git clone https://github.com/kubernetes/apiserver.git -b release-1.10 ;\
+	git clone https://github.com/kubernetes/kubernetes.git -b release-1.10 ;\
+	git clone https://github.com/kubernetes/api.git -b release-1.10 ;\
 	rm -rf kubernetes/vendor/k8s.io ;\
 	rm -rf $(find . -type d |grep "github.com/golang/glog") ;\
 	rm -rf $(find . -type d |grep "github.com/emicklei/go-restful") ;\
