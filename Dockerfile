@@ -15,6 +15,7 @@ RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	go get -d gopkg.in/mgo.v2 ;\
 	go get -d gopkg.in/redis.v4 ;\
 	go get -d github.com/emicklei/go-restful ;\
+	go get -d github.com/coreos/go-oidc ;\
 	go get -d github.com/go-openapi/spec ;\
 	go get -d github.com/golang/protobuf ;\
 	go get -d github.com/gogo/protobuf ;\
