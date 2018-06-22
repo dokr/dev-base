@@ -1,7 +1,10 @@
-FROM ckeyer/dev:node
+FROM alpine:edge
 
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
-RUN mkdir -p /usr/lib/node_modules/node-sass && \
-	npm install -g node-sass
+RUN apk add --update ca-certificates bash python g++ musl make
+RUN apk add --update nodejs nodejs-npm
+RUN npm i -g npm@latest ;\
+	npm install -g webpack vue-cli vue express npm-check-updates node-sass
 
+WORKDIR /opt 
