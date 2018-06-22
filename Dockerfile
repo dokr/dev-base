@@ -2,10 +2,9 @@ FROM alpine:edge
 
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
-RUN apk update && \
-	apk add --update ca-certificates bash nodejs nodejs-npm ;\
-	npm update ;\
-	npm i npm@latest -g ;\
+RUN apk add --update ca-certificates bash python g++ musl
+RUN apk add --update nodejs nodejs-npm
+RUN npm i -g npm@latest ;\
 	npm install -g webpack vue-cli vue express 
 
 WORKDIR /opt 
