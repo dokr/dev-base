@@ -8,8 +8,8 @@ env PATH=/.npm-global/bin:$PATH
 RUN apk update && \
 	apk add --update ca-certificates bash nodejs nodejs-npm git make which python;
 
-RUN mkdir /.npm-global ;\
-	npm config set prefix '/.npm-global' ;\
-	npm update && npm install -g vue-cli node-sass
+RUN npm update && \
+	npm i npm@latest -g && \
+	npm install -g --unsafe-perm vue-cli node-sass
 
 WORKDIR /opt
