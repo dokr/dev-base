@@ -13,9 +13,9 @@ ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ENV GOCACHE=/go-cache
 
 RUN cd /usr/local && \
-	wget https://storage.googleapis.com/golang/go1.10.1.linux-amd64.tar.gz && \
-	tar zxf go1.10.1.linux-amd64.tar.gz && \
-	rm -f go1.10.1.linux-amd64.tar.gz
+	wget https://storage.googleapis.com/golang/go1.10.3.linux-amd64.tar.gz && \
+	tar zxf go1.10.3.linux-amd64.tar.gz && \
+	rm -f go1.10.3.linux-amd64.tar.gz
 
 RUN go get golang.org/x/crypto ;\
 	go get golang.org/x/image ;\
