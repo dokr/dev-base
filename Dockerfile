@@ -17,6 +17,7 @@ RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	go get -d github.com/go-openapi/spec ;\
 	go get -d github.com/golang/protobuf ;\
 	go get -d github.com/gogo/protobuf ;\
+	go get -d golang.org/x/lint ;\
 	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
 	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
 	go get github.com/golang/protobuf/{proto,protoc-gen-go} ;\
