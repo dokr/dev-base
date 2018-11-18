@@ -9,15 +9,14 @@ RUN cd /tmp && \
 	rm -rf /tmp/*
 
 RUN mkdir -p $GOPATH/src/google.golang.org ;\
-	git clone https://github.com/grpc/grpc-go.git -b v1.14.x $GOPATH/src/google.golang.org/grpc ;\
+	git clone https://github.com/grpc/grpc-go.git -b v1.16.x $GOPATH/src/google.golang.org/grpc ;\
 	go get -d github.com/sirupsen/logrus ;\
 	go get -d github.com/google/gofuzz ;\
 	go get -d github.com/emicklei/go-restful ;\
-	go get -d github.com/coreos/go-oidc ;\
 	go get -d github.com/go-openapi/spec ;\
 	go get -d github.com/golang/protobuf ;\
 	go get -d github.com/gogo/protobuf ;\
-	go get -d golang.org/x/lint ;\
+	go get golang.org/x/lint ;\
 	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
 	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
 	go get github.com/golang/protobuf/{proto,protoc-gen-go} ;\
