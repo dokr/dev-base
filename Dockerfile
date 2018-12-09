@@ -24,4 +24,5 @@ RUN go get golang.org/x/crypto ;\
 	go get golang.org/x/sys ;\
 	go get golang.org/x/text ;\
 	go get golang.org/x/time ;\
+	go get golang.org/x/lint ;\
 	rm -rf $(find $GOPATH/src -type d -name .git)
