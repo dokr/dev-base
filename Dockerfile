@@ -11,6 +11,7 @@ ENV GOROOT=/usr/local/go
 ENV GOPATH=/go
 ENV PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ENV GOCACHE=/go-cache
+WORKDIR /go/src
 
 RUN cd /usr/local && \
 	wget https://storage.googleapis.com/golang/go1.11.linux-amd64.tar.gz && \
@@ -24,5 +25,5 @@ RUN go get golang.org/x/crypto ;\
 	go get golang.org/x/sys ;\
 	go get golang.org/x/text ;\
 	go get golang.org/x/time ;\
-	go get golang.org/x/lint ;\
+	go get golang.org/x/lint/golint ;\
 	rm -rf $(find $GOPATH/src -type d -name .git)
