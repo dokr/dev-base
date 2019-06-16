@@ -12,7 +12,10 @@ RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	mkdir -p $GOPATH/src/github.com/gogo ;\
 	git clone https://github.com/grpc/grpc-go.git -b v1.21.x $GOPATH/src/google.golang.org/grpc ;\
 	git clone https://github.com/gogo/protobuf.git $GOPATH/src/github.com/gogo/protobuf ;\
+	git clone https://github.com/grpc-ecosystem/go-grpc-middleware.git $GOPATH/src/github.com/grpc-ecosystem/go-grpc-middleware ;\
 	cd $GOPATH/src/github.com/gogo/protobuf ;\
+	git checkout v1.0.0 ;\
+	cd $GOPATH/src/github.com/grpc-ecosystem/go-grpc-middleware ;\
 	git checkout v1.0.0 ;\
 	go get github.com/sirupsen/logrus ;\
 	go get github.com/google/gofuzz ;\
@@ -21,7 +24,6 @@ RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	go get github.com/golang/protobuf ;\
 	go get github.com/gogo/protobuf ;\
 	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-{grpc-gateway,swagger} ;\
-	go get github.com/grpc-ecosystem/go-grpc-middleware ;\
 	go get github.com/golang/protobuf/{proto,protoc-gen-go} ;\
 	go get github.com/gogo/protobuf/protoc-gen-go{fast,gofast,gofaster,goslick} ;\
 	go get github.com/infobloxopen/protoc-gen-gorm ;\
