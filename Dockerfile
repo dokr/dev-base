@@ -11,18 +11,20 @@ RUN cd /tmp && \
 RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	mkdir -p $GOPATH/src/github.com/gogo ;\
 	git clone https://github.com/grpc/grpc-go.git -b v1.21.x $GOPATH/src/google.golang.org/grpc ;\
-	git clone https://github.com/gogo/protobuf.git -b v1.0.0 $GOPATH/src/github.com/gogo/protobuf ;\
-	go get -d -u github.com/sirupsen/logrus ;\
-	go get -d -u github.com/google/gofuzz ;\
-	go get -d -u github.com/emicklei/go-restful ;\
-	go get -d -u github.com/go-openapi/spec ;\
-	go get -d -u github.com/golang/protobuf ;\
-	go get -d -u github.com/gogo/protobuf ;\
-	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
-	go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
-	go get -u github.com/golang/protobuf/{proto,protoc-gen-go} ;\
-	go get -u github.com/gogo/protobuf/protoc-gen-go{fast,gofast,gofaster,goslick} ;\
-	go get -u github.com/infobloxopen/protoc-gen-gorm ;\
-	go get -u github.com/jinzhu/gorm ;\
-	go get -u github.com/infobloxopen/atlas-app-toolkit/gorm ;\
+	git clone https://github.com/gogo/protobuf.git $GOPATH/src/github.com/gogo/protobuf ;\
+	cd $GOPATH/src/github.com/gogo/protobuf ;\
+	git checkout v1.0.0 ;\
+	go get github.com/sirupsen/logrus ;\
+	go get github.com/google/gofuzz ;\
+	go get github.com/emicklei/go-restful ;\
+	go get github.com/go-openapi/spec ;\
+	go get github.com/golang/protobuf ;\
+	go get github.com/gogo/protobuf ;\
+	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
+	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
+	go get github.com/golang/protobuf/{proto,protoc-gen-go} ;\
+	go get github.com/gogo/protobuf/protoc-gen-go{fast,gofast,gofaster,goslick} ;\
+	go get github.com/infobloxopen/protoc-gen-gorm ;\
+	go get github.com/jinzhu/gorm ;\
+	go get github.com/infobloxopen/atlas-app-toolkit/gorm ;\
 	rm -rf $(find $GOPATH/src -type d -name .git)
