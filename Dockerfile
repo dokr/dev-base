@@ -26,5 +26,4 @@ RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	go get github.com/gogo/protobuf/protoc-gen-go{fast,gofast,gofaster,goslick} ;\
 	go get github.com/infobloxopen/protoc-gen-gorm ;\
 	go get github.com/jinzhu/gorm ;\
-	go get github.com/infobloxopen/atlas-app-toolkit/gorm ;\
-	rm -rf $(find $GOPATH/src -type d -name .git)
+	go get github.com/infobloxopen/atlas-app-toolkit/gorm
