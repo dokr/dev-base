@@ -9,6 +9,7 @@ RUN cd /tmp && \
 	rm -rf /tmp/*
 
 RUN mkdir -p $GOPATH/src/google.golang.org ;\
+	mkdir -p $GOPATH/src/github.com/gogo ;\
 	git clone https://github.com/grpc/grpc-go.git -b v1.21.x $GOPATH/src/google.golang.org/grpc ;\
 	git clone https://github.com/gogo/protobuf.git -b v1.0.0 $GOPATH/src/github.com/gogo/protobuf ;\
 	go get -d -u github.com/sirupsen/logrus ;\
