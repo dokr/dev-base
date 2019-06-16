@@ -20,8 +20,8 @@ RUN mkdir -p $GOPATH/src/google.golang.org ;\
 	go get github.com/go-openapi/spec ;\
 	go get github.com/golang/protobuf ;\
 	go get github.com/gogo/protobuf ;\
-	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway ;\
-	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger ;\
+	go get github.com/grpc-ecosystem/grpc-gateway/protoc-gen-{grpc-gateway,swagger} ;\
+	go get github.com/grpc-ecosystem/go-grpc-middleware ;\
 	go get github.com/golang/protobuf/{proto,protoc-gen-go} ;\
 	go get github.com/gogo/protobuf/protoc-gen-go{fast,gofast,gofaster,goslick} ;\
 	go get github.com/infobloxopen/protoc-gen-gorm ;\
