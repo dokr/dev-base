@@ -1,6 +1,5 @@
-FROM alpine:edge
+FROM tomcat:jdk8
 
-RUN apk add --update ca-certificates tzdata
 ENV TZ=Asia/Shanghai
-
-RUN apk add --update bash curl
+RUN apt update -y && \
+	 apt install -y maven ca-certificates tzdata
