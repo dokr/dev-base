@@ -1,7 +1,7 @@
-FROM tomcat:jdk8
+FROM ubuntu:16.04
 
 ENV TZ=Asia/Shanghai
 RUN apt update -y && \
-	 apt install -y maven ca-certificates tzdata
+	 apt install -y ca-certificates tzdata
 
-RUN apt install -y openjfx
+RUN apt install -y openjdk-8-jdk openjfx maven
