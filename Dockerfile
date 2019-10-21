@@ -14,9 +14,9 @@ ENV GOCACHE=/go-cache
 WORKDIR /go/src
 
 RUN cd /usr/local && \
-	wget https://storage.googleapis.com/golang/go1.12.linux-amd64.tar.gz && \
-	tar zxf go1.12.linux-amd64.tar.gz && \
-	rm -f go1.12.linux-amd64.tar.gz
+	wget https://storage.googleapis.com/golang/go1.10.linux-amd64.tar.gz && \
+	tar zxf go1.10.linux-amd64.tar.gz && \
+	rm -f go1.10.linux-amd64.tar.gz
 
 RUN go get golang.org/x/crypto ;\
 	go get golang.org/x/image ;\
