@@ -26,4 +26,5 @@ RUN go get golang.org/x/crypto ;\
 	go get golang.org/x/text ;\
 	go get golang.org/x/time ;\
 	go get golang.org/x/lint/golint ;\
-	go get github.com/swaggo/swag/cmd/swag
+	go get github.com/swaggo/swag/cmd/swag ;\
+	go get github.com/jteeuwen/go-bindata/go-bindata
