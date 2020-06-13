@@ -1,4 +1,4 @@
-FROM ckeyer/dev:go
+FROM ckeyer/dev:go1.14
 
 MAINTAINER Chuanjian Wang <me@ckeyer.com>
 
