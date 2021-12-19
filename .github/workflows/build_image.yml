@@ -1,0 +1,44 @@
+name: Build Image
+
+on:
+  push:
+    # Publish `$default-branch` as Docker `latest` image.
+    branches:
+      - *
+
+    # Publish `v1.2.3` tags as releases.
+    tags:
+      - v*
+
+  # Run tests for any PRs.
+  # pull_request:
+
+env:
+  TOOLS_IMAGE_NAME: ghcr.io/dokr/dev
+
+jobs:
+  # Release image to DockerHub.
+  generate_tools_images:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Log into registry
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Build image (captcha_recognition)
+        env:
+          TOOL_NAME: tf-base
+        run: |
+          echo "GITHUB_REF_NAME: ${GITHUB_REF_NAME}"
+          echo "build image ${TOOLS_IMAGE_NAME}:${TOOL_NAME}"
+          docker build -t ${TOOLS_IMAGE_NAME}:${TOOL_NAME} .
+          echo "push image ${TOOLS_IMAGE_NAME}:${TOOL_NAME}"
+          docker push ${TOOLS_IMAGE_NAME}:${TOOL_NAME}
