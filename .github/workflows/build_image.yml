@@ -25,12 +25,12 @@ jobs:
         run: |
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
-      - name: Build image (captcha_recognition)
-        env:
-          TOOL_NAME: tf-base
+      - name: Build image
         run: |
-          echo "GITHUB_REF_NAME: ${GITHUB_REF_NAME}"
-          echo "build image ${TOOLS_IMAGE_NAME}:${TOOL_NAME}"
-          docker build -t ${TOOLS_IMAGE_NAME}:${TOOL_NAME} .
-          echo "push image ${TOOLS_IMAGE_NAME}:${TOOL_NAME}"
-          docker push ${TOOLS_IMAGE_NAME}:${TOOL_NAME}
+          echo "build image ${TOOLS_IMAGE_NAME}:${GITHUB_REF_NAME}"
+          docker build -t ${TOOLS_IMAGE_NAME}:${GITHUB_REF_NAME} .
+      - name: Push image
+        run: |
+          echo "push image ${TOOLS_IMAGE_NAME}:${GITHUB_REF_NAME}"
+          docker push ${TOOLS_IMAGE_NAME}:${GITHUB_REF_NAME}
+      
